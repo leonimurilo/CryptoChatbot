@@ -1,0 +1,3068 @@
+{
+  "1337": {
+    "id": "1337"
+  },
+  "Bitcoin": {
+    "id": "bitcoin"
+  },
+  "Ethereum": {
+    "id": "ethereum"
+  },
+  "Ripple": {
+    "id": "ripple"
+  },
+  "Litecoin": {
+    "id": "litecoin"
+  },
+  "NEM": {
+    "id": "nem"
+  },
+  "Dash": {
+    "id": "dash"
+  },
+  "Ethereum_Classic": {
+    "id": "ethereum-classic"
+  },
+  "IOTA": {
+    "id": "iota"
+  },
+  "Monero": {
+    "id": "monero"
+  },
+  "Stratis": {
+    "id": "stratis"
+  },
+  "EOS": {
+    "id": "eos"
+  },
+  "BitConnect": {
+    "id": "bitconnect"
+  },
+  "Qtum": {
+    "id": "qtum"
+  },
+  "NEO": {
+    "id": "neo"
+  },
+  "Zcash": {
+    "id": "zcash"
+  },
+  "BitShares": {
+    "id": "bitshares"
+  },
+  "Tether": {
+    "id": "tether"
+  },
+  "Steem": {
+    "id": "steem"
+  },
+  "Iconomi": {
+    "id": "iconomi"
+  },
+  "Waves": {
+    "id": "waves"
+  },
+  "Veritaseum": {
+    "id": "veritaseum"
+  },
+  "Siacoin": {
+    "id": "siacoin"
+  },
+  "Bytecoin": {
+    "id": "bytecoin-bcn"
+  },
+  "Gnosis": {
+    "id": "gnosis-gno"
+  },
+  "Lisk": {
+    "id": "lisk"
+  },
+  "Golem": {
+    "id": "golem-network-tokens"
+  },
+  "Status": {
+    "id": "status"
+  },
+  "Dogecoin": {
+    "id": "dogecoin"
+  },
+  "Augur": {
+    "id": "augur"
+  },
+  "Stellar_Lumens": {
+    "id": "stellar"
+  },
+  "Byteball": {
+    "id": "byteball"
+  },
+  "Decred": {
+    "id": "decred"
+  },
+  "DigiByte": {
+    "id": "digibyte"
+  },
+  "Factom": {
+    "id": "factom"
+  },
+  "MaidSafeCoin": {
+    "id": "maidsafecoin"
+  },
+  "GameCredits": {
+    "id": "gamecredits"
+  },
+  "DigixDAO": {
+    "id": "digixdao"
+  },
+  "OmiseGo": {
+    "id": "omisego"
+  },
+  "Populous": {
+    "id": "populous"
+  },
+  "MCAP": {
+    "id": "mcap"
+  },
+  "Ardor": {
+    "id": "ardor"
+  },
+  "Nxt": {
+    "id": "nxt"
+  },
+  "Basic_Attention_Token": {
+    "id": "basic-attention-token"
+  },
+  "PIVX": {
+    "id": "pivx"
+  },
+  "TenX": {
+    "id": "tenx"
+  },
+  "Komodo": {
+    "id": "komodo"
+  },
+  "MobileGo": {
+    "id": "mobilego"
+  },
+  "Bancor": {
+    "id": "bancor"
+  },
+  "Metal": {
+    "id": "metal"
+  },
+  "FirstBlood": {
+    "id": "firstblood"
+  },
+  "Lykke": {
+    "id": "lykke"
+  },
+  "SingularDTV": {
+    "id": "singulardtv"
+  },
+  "Aragon": {
+    "id": "aragon"
+  },
+  "Civic": {
+    "id": "civic"
+  },
+  "SysCoin": {
+    "id": "syscoin"
+  },
+  "BitcoinDark": {
+    "id": "bitcoindark"
+  },
+  "Metaverse_Entropy": {
+    "id": "metaverse"
+  },
+  "Ark": {
+    "id": "ark"
+  },
+  "DECENT": {
+    "id": "decent"
+  },
+  "LEOcoin": {
+    "id": "leocoin"
+  },
+  "Nexus": {
+    "id": "nexus"
+  },
+  "FunFair": {
+    "id": "funfair"
+  },
+  "Blocknet": {
+    "id": "blocknet"
+  },
+  "Ubiq": {
+    "id": "ubiq"
+  },
+  "Bitdeal": {
+    "id": "bitdeal"
+  },
+  "Peercoin": {
+    "id": "peercoin"
+  },
+  "Verge": {
+    "id": "verge"
+  },
+  "Particl": {
+    "id": "particl"
+  },
+  "Emercoin": {
+    "id": "emercoin"
+  },
+  "Asch": {
+    "id": "asch"
+  },
+  "Etheroll": {
+    "id": "etheroll"
+  },
+  "Round": {
+    "id": "round"
+  },
+  "Edgeless": {
+    "id": "edgeless"
+  },
+  "ReddCoin": {
+    "id": "reddcoin"
+  },
+  "Numeraire": {
+    "id": "numeraire"
+  },
+  "Peerplays": {
+    "id": "peerplays-ppy"
+  },
+  "iExec_RLC": {
+    "id": "rlc"
+  },
+  "vSlice": {
+    "id": "vslice"
+  },
+  "Xaurum": {
+    "id": "xaurum"
+  },
+  "LBRY_Credits": {
+    "id": "library-credit"
+  },
+  "Pillar": {
+    "id": "pillar"
+  },
+  "Gulden": {
+    "id": "gulden"
+  },
+  "Wings": {
+    "id": "wings"
+  },
+  "Storj": {
+    "id": "storj"
+  },
+  "Humaniq": {
+    "id": "humaniq"
+  },
+  "Melon": {
+    "id": "melon"
+  },
+  "Namecoin": {
+    "id": "namecoin"
+  },
+  "MonaCoin": {
+    "id": "monacoin"
+  },
+  "Counterparty": {
+    "id": "counterparty"
+  },
+  "E-Dinar_Coin": {
+    "id": "e-dinar-coin"
+  },
+  "Skycoin": {
+    "id": "skycoin"
+  },
+  "Viacoin": {
+    "id": "viacoin"
+  },
+  "BitBay": {
+    "id": "bitbay"
+  },
+  "TaaS": {
+    "id": "taas"
+  },
+  "ION": {
+    "id": "ion"
+  },
+  "SIBCoin": {
+    "id": "sibcoin"
+  },
+  "DigitalNote": {
+    "id": "digitalnote"
+  },
+  "PotCoin": {
+    "id": "potcoin"
+  },
+  "ZCoin": {
+    "id": "zcoin"
+  },
+  "CloakCoin": {
+    "id": "cloakcoin"
+  },
+  "BlackCoin": {
+    "id": "blackcoin"
+  },
+  "Quantum": {
+    "id": "quantum"
+  },
+  "Vertcoin": {
+    "id": "vertcoin"
+  },
+  "Omni": {
+    "id": "omni"
+  },
+  "Synereo": {
+    "id": "synereo"
+  },
+  "adToken": {
+    "id": "adtoken"
+  },
+  "Elastic": {
+    "id": "elastic"
+  },
+  "Quantum_Resistant_Ledger": {
+    "id": "quantum-resistant-ledger"
+  },
+  "YbCoin": {
+    "id": "ybcoin"
+  },
+  "Ecobit": {
+    "id": "ecobit"
+  },
+  "FirstCoin": {
+    "id": "firstcoin"
+  },
+  "Polybius": {
+    "id": "polybius"
+  },
+  "CoEval": {
+    "id": "coeval"
+  },
+  "Rialto": {
+    "id": "rialto"
+  },
+  "Safe_Exchange_Coin": {
+    "id": "safe-exchange-coin"
+  },
+  "Mysterium": {
+    "id": "mysterium"
+  },
+  "FairCoin": {
+    "id": "faircoin"
+  },
+  "Mooncoin": {
+    "id": "mooncoin"
+  },
+  "NAV_Coin": {
+    "id": "nav-coin"
+  },
+  "TokenCard": {
+    "id": "tokencard"
+  },
+  "EarthCoin": {
+    "id": "earthcoin"
+  },
+  "Burst": {
+    "id": "burst"
+  },
+  "IO_Coin": {
+    "id": "iocoin"
+  },
+  "SONM": {
+    "id": "sonm"
+  },
+  "Wagerr": {
+    "id": "wagerr"
+  },
+  "Golos": {
+    "id": "golos"
+  },
+  "Unity_Ingot": {
+    "id": "unity-ingot"
+  },
+  "Bankcoin": {
+    "id": "bankcoin"
+  },
+  "Expanse": {
+    "id": "expanse"
+  },
+  "Databits": {
+    "id": "databits"
+  },
+  "EB3_Coin": {
+    "id": "eb3-coin"
+  },
+  "WeTrust": {
+    "id": "trust"
+  },
+  "Voxels": {
+    "id": "voxels"
+  },
+  "Agoras_Tokens": {
+    "id": "agoras-tokens"
+  },
+  "GridCoin": {
+    "id": "gridcoin"
+  },
+  "Pluton": {
+    "id": "pluton"
+  },
+  "Crown": {
+    "id": "crown"
+  },
+  "DubaiCoin": {
+    "id": "dubaicoin-dbix"
+  },
+  "Radium": {
+    "id": "radium"
+  },
+  "MonetaryUnit": {
+    "id": "monetaryunit"
+  },
+  "E-coin": {
+    "id": "e-coin"
+  },
+  "Chronobank": {
+    "id": "chronobank"
+  },
+  "BCAP": {
+    "id": "bcap"
+  },
+  "Binance_Coin": {
+    "id": "binance-coin"
+  },
+  "Waves_Community_Token": {
+    "id": "waves-community-token"
+  },
+  "SaluS": {
+    "id": "salus"
+  },
+  "Santiment_Network_Token": {
+    "id": "santiment"
+  },
+  "Cofound_it": {
+    "id": "cofound-it"
+  },
+  "Nexium": {
+    "id": "nexium"
+  },
+  "OBITS": {
+    "id": "obits"
+  },
+  "Groestlcoin": {
+    "id": "groestlcoin"
+  },
+  "LuckChain": {
+    "id": "luckchain"
+  },
+  "bitCNY": {
+    "id": "bitcny"
+  },
+  "Energycoin": {
+    "id": "energycoin"
+  },
+  "NeosCoin": {
+    "id": "neoscoin"
+  },
+  "Infinitecoin": {
+    "id": "infinitecoin"
+  },
+  "HEAT": {
+    "id": "heat-ledger"
+  },
+  "Einsteinium": {
+    "id": "einsteinium"
+  },
+  "ChainCoin": {
+    "id": "chaincoin"
+  },
+  "Bitcoin_Plus": {
+    "id": "bitcoin-plus"
+  },
+  "NoLimitCoin": {
+    "id": "nolimitcoin"
+  },
+  "Monaco": {
+    "id": "monaco"
+  },
+  "Patientory": {
+    "id": "patientory"
+  },
+  "Rubycoin": {
+    "id": "rubycoin"
+  },
+  "Sprouts": {
+    "id": "sprouts"
+  },
+  "LoMoCoin": {
+    "id": "lomocoin"
+  },
+  "Shift": {
+    "id": "shift"
+  },
+  "Matchpool": {
+    "id": "guppy"
+  },
+  "EncryptoTel": {
+    "id": "encryptotel"
+  },
+  "Unobtanium": {
+    "id": "unobtanium"
+  },
+  "WorldCoin": {
+    "id": "worldcoin"
+  },
+  "SpreadCoin": {
+    "id": "spreadcoin"
+  },
+  "Swarm_City": {
+    "id": "swarm-city"
+  },
+  "Feathercoin": {
+    "id": "feathercoin"
+  },
+  "Pepe_Cash": {
+    "id": "pepe-cash"
+  },
+  "Bitcrystals": {
+    "id": "bitcrystals"
+  },
+  "Clams": {
+    "id": "clams"
+  },
+  "DNotes": {
+    "id": "dnotes"
+  },
+  "VeriCoin": {
+    "id": "vericoin"
+  },
+  "Diamond": {
+    "id": "diamond"
+  },
+  "Sphere": {
+    "id": "sphere"
+  },
+  "FoldingCoin": {
+    "id": "foldingcoin"
+  },
+  "Quark": {
+    "id": "quark"
+  },
+  "XtraBYtes": {
+    "id": "xtrabytes"
+  },
+  "Gambit": {
+    "id": "gambit"
+  },
+  "MergeCoin": {
+    "id": "mergecoin"
+  },
+  "Primecoin": {
+    "id": "primecoin"
+  },
+  "FlorinCoin": {
+    "id": "florincoin"
+  },
+  "Mothership": {
+    "id": "mothership"
+  },
+  "Nimiq": {
+    "id": "nimiq"
+  },
+  "Aeon": {
+    "id": "aeon"
+  },
+  "Rise": {
+    "id": "rise"
+  },
+  "Novacoin": {
+    "id": "novacoin"
+  },
+  "VPNCoin": {
+    "id": "vpncoin"
+  },
+  "Lunyr": {
+    "id": "lunyr"
+  },
+  "Megacoin": {
+    "id": "megacoin"
+  },
+  "NVO": {
+    "id": "nvo"
+  },
+  "DaxxCoin": {
+    "id": "daxxcoin"
+  },
+  "Circuits_of_Value": {
+    "id": "circuits-of-value"
+  },
+  "BelaCoin": {
+    "id": "belacoin"
+  },
+  "Incent": {
+    "id": "incent"
+  },
+  "ZenCash": {
+    "id": "zencash"
+  },
+  "Cryptonite": {
+    "id": "cryptonite"
+  },
+  "Creditbit": {
+    "id": "creditbit"
+  },
+  "AdEx": {
+    "id": "adex"
+  },
+  "Pascal_Coin": {
+    "id": "pascal-coin"
+  },
+  "SolarCoin": {
+    "id": "solarcoin"
+  },
+  "BitSend": {
+    "id": "bitsend"
+  },
+  "BitBean": {
+    "id": "bitbean"
+  },
+  "PRIZM": {
+    "id": "prizm"
+  },
+  "Auroracoin": {
+    "id": "auroracoin"
+  },
+  "InsureX": {
+    "id": "insurex"
+  },
+  "OKCash": {
+    "id": "okcash"
+  },
+  "Global_Currency_Reserve": {
+    "id": "global-currency-reserve"
+  },
+  "E-Currency_Coin": {
+    "id": "eccoin"
+  },
+  "Vcash": {
+    "id": "vcash"
+  },
+  "MaxCoin": {
+    "id": "maxcoin"
+  },
+  "Atmos": {
+    "id": "atmos"
+  },
+  "PinkCoin": {
+    "id": "pinkcoin"
+  },
+  "RaiBlocks": {
+    "id": "raiblocks"
+  },
+  "Musicoin": {
+    "id": "musicoin"
+  },
+  "SmartCash": {
+    "id": "smartcash"
+  },
+  "PutinCoin": {
+    "id": "putincoin"
+  },
+  "iCash": {
+    "id": "icash"
+  },
+  "Blitzcash": {
+    "id": "blitzcash"
+  },
+  "GoldCoin": {
+    "id": "goldcoin"
+  },
+  "Espers": {
+    "id": "espers"
+  },
+  "ArtByte": {
+    "id": "applebyte"
+  },
+  "Wild_Beast_Block": {
+    "id": "wild-beast-block"
+  },
+  "Zetacoin": {
+    "id": "zetacoin"
+  },
+  "Sequence": {
+    "id": "sequence"
+  },
+  "Steem_Dollars": {
+    "id": "steem-dollars"
+  },
+  "Curecoin": {
+    "id": "curecoin"
+  },
+  "ZcCoin": {
+    "id": "zccoin"
+  },
+  "APX": {
+    "id": "apx"
+  },
+  "Crave": {
+    "id": "crave"
+  },
+  "Spectrecoin": {
+    "id": "spectrecoin"
+  },
+  "Dimecoin": {
+    "id": "dimecoin"
+  },
+  "Zennies": {
+    "id": "zennies"
+  },
+  "Myriad": {
+    "id": "myriad"
+  },
+  "Boolberry": {
+    "id": "boolberry"
+  },
+  "IncaKoin": {
+    "id": "incakoin"
+  },
+  "Mintcoin": {
+    "id": "mintcoin"
+  },
+  "Fastcoin": {
+    "id": "fastcoin"
+  },
+  "Stealthcoin": {
+    "id": "stealthcoin"
+  },
+  "Bitquence": {
+    "id": "bitquence"
+  },
+  "Riecoin": {
+    "id": "riecoin"
+  },
+  "NautilusCoin": {
+    "id": "nautiluscoin"
+  },
+  "ExclusiveCoin": {
+    "id": "exclusivecoin"
+  },
+  "ZrCoin": {
+    "id": "zrcoin"
+  },
+  "Synergy": {
+    "id": "synergy"
+  },
+  "Starta": {
+    "id": "starta"
+  },
+  "Syndicate": {
+    "id": "syndicate"
+  },
+  "Project_Decorum": {
+    "id": "project-decorum"
+  },
+  "Darcrus": {
+    "id": "darcrus"
+  },
+  "Bata": {
+    "id": "bata"
+  },
+  "Bitswift": {
+    "id": "bitswift"
+  },
+  "Dynamic": {
+    "id": "dynamic"
+  },
+  "Zeitcoin": {
+    "id": "zeitcoin"
+  },
+  "DopeCoin": {
+    "id": "dopecoin"
+  },
+  "VOISE": {
+    "id": "voise"
+  },
+  "ArcticCoin": {
+    "id": "arcticcoin"
+  },
+  "InsaneCoin": {
+    "id": "insanecoin"
+  },
+  "TagCoin": {
+    "id": "tagcoin"
+  },
+  "Visio": {
+    "id": "visio"
+  },
+  "Qwark": {
+    "id": "qwark"
+  },
+  "Creativecoin": {
+    "id": "creativecoin"
+  },
+  "Triggers": {
+    "id": "triggers"
+  },
+  "ZClassic": {
+    "id": "zclassic"
+  },
+  "FinCoin": {
+    "id": "fincoin"
+  },
+  "KoreCoin": {
+    "id": "korecoin"
+  },
+  "CryptoCarbon": {
+    "id": "cryptocarbon"
+  },
+  "AudioCoin": {
+    "id": "audiocoin"
+  },
+  "Renos": {
+    "id": "renos"
+  },
+  "Neutron": {
+    "id": "neutron"
+  },
+  "EuropeCoin": {
+    "id": "europecoin"
+  },
+  "Legends_Room": {
+    "id": "legends-room"
+  },
+  "Dotcoin": {
+    "id": "dotcoin"
+  },
+  "Terracoin": {
+    "id": "terracoin"
+  },
+  "Breakout_Stake": {
+    "id": "breakout-stake"
+  },
+  "RouletteToken": {
+    "id": "roulettetoken"
+  },
+  "FuckToken": {
+    "id": "fucktoken"
+  },
+  "SkinCoin": {
+    "id": "skincoin"
+  },
+  "Adzcoin": {
+    "id": "adzcoin"
+  },
+  "TransferCoin": {
+    "id": "transfercoin"
+  },
+  "EquiTrader": {
+    "id": "equitrader"
+  },
+  "HunterCoin": {
+    "id": "huntercoin"
+  },
+  "vTorrent": {
+    "id": "vtorrent"
+  },
+  "Bitmark": {
+    "id": "bitmark"
+  },
+  "Embers": {
+    "id": "embers"
+  },
+  "Tickets": {
+    "id": "tickets"
+  },
+  "2GIVE": {
+    "id": "2give"
+  },
+  "BoostCoin": {
+    "id": "boostcoin"
+  },
+  "NuShares": {
+    "id": "nushares"
+  },
+  "HempCoin": {
+    "id": "hempcoin-hmp"
+  },
+  "InPay": {
+    "id": "inpay"
+  },
+  "FedoraCoin": {
+    "id": "fedoracoin"
+  },
+  "Breakout": {
+    "id": "breakout"
+  },
+  "Pesetacoin": {
+    "id": "pesetacoin"
+  },
+  "PoSW_Coin": {
+    "id": "posw-coin"
+  },
+  "GeoCoin": {
+    "id": "geocoin"
+  },
+  "VeriumReserve": {
+    "id": "veriumreserve"
+  },
+  "Carboncoin": {
+    "id": "carboncoin"
+  },
+  "WhiteCoin": {
+    "id": "whitecoin"
+  },
+  "Minereum": {
+    "id": "minereum"
+  },
+  "CannabisCoin": {
+    "id": "cannabiscoin"
+  },
+  "Hush": {
+    "id": "hush"
+  },
+  "CryptoPing": {
+    "id": "cryptoping"
+  },
+  "Startcoin": {
+    "id": "startcoin"
+  },
+  "Tao": {
+    "id": "tao"
+  },
+  "EverGreenCoin": {
+    "id": "evergreencoin"
+  },
+  "I0Coin": {
+    "id": "i0coin"
+  },
+  "FUNCoin": {
+    "id": "funcoin"
+  },
+  "HTMLCOIN": {
+    "id": "htmlcoin"
+  },
+  "PepeCoin": {
+    "id": "memetic"
+  },
+  "Tokes": {
+    "id": "tokes"
+  },
+  "Adelphoi": {
+    "id": "adelphoi"
+  },
+  "Mercury": {
+    "id": "mercury"
+  },
+  "iDice": {
+    "id": "idice"
+  },
+  "Hacker_Gold": {
+    "id": "hacker-gold"
+  },
+  "Altcoin": {
+    "id": "altcoin-alt"
+  },
+  "HyperStake": {
+    "id": "hyperstake"
+  },
+  "Sexcoin": {
+    "id": "sexcoin"
+  },
+  "LiteDoge": {
+    "id": "litedoge"
+  },
+  "Signatum": {
+    "id": "signatum"
+  },
+  "e-Gulden": {
+    "id": "e-gulden"
+  },
+  "AurumCoin": {
+    "id": "aurumcoin"
+  },
+  "WavesGo": {
+    "id": "wavesgo"
+  },
+  "Condensate": {
+    "id": "condensate"
+  },
+  "TileCoin": {
+    "id": "tilecoin"
+  },
+  "TrustPlus": {
+    "id": "trustplus"
+  },
+  "Elcoin": {
+    "id": "elcoin-el"
+  },
+  "FIMKrypto": {
+    "id": "fimkrypto"
+  },
+  "Crypto_Bullion": {
+    "id": "cryptogenic-bullion"
+  },
+  "Netko": {
+    "id": "netko"
+  },
+  "Magi": {
+    "id": "magi"
+  },
+  "BlueCoin": {
+    "id": "bluecoin"
+  },
+  "Octanox": {
+    "id": "octanox"
+  },
+  "ProCurrency": {
+    "id": "procurrency"
+  },
+  "DT_Token": {
+    "id": "dt-token"
+  },
+  "Eternity": {
+    "id": "eternity"
+  },
+  "Capricoin": {
+    "id": "capricoin"
+  },
+  "Moin": {
+    "id": "moin"
+  },
+  "Ripto_Bux": {
+    "id": "ripto-bux"
+  },
+  "ParkByte": {
+    "id": "parkbyte"
+  },
+  "FujiCoin": {
+    "id": "fujicoin"
+  },
+  "Dashcoin": {
+    "id": "dashcoin"
+  },
+  "NetCoin": {
+    "id": "netcoin"
+  },
+  "Orbitcoin": {
+    "id": "orbitcoin"
+  },
+  "Dinastycoin": {
+    "id": "dinastycoin"
+  },
+  "KekCoin": {
+    "id": "kekcoin"
+  },
+  "PIECoin": {
+    "id": "piecoin"
+  },
+  "Centurion": {
+    "id": "centurion"
+  },
+  "iTicoin": {
+    "id": "iticoin"
+  },
+  "CryptoForecast": {
+    "id": "cryptoforecast"
+  },
+  "Unitus": {
+    "id": "unitus"
+  },
+  "NuBits": {
+    "id": "nubits"
+  },
+  "Bytecent": {
+    "id": "bytecent"
+  },
+  "Footy_Cash": {
+    "id": "footy-cash"
+  },
+  "UnbreakableCoin": {
+    "id": "unbreakablecoin"
+  },
+  "BitBar": {
+    "id": "bitbar"
+  },
+  "Fantomcoin": {
+    "id": "fantomcoin"
+  },
+  "Bitcore": {
+    "id": "bitcore"
+  },
+  "HiCoin": {
+    "id": "hicoin"
+  },
+  "Influxcoin": {
+    "id": "influxcoin"
+  },
+  "SmileyCoin": {
+    "id": "smileycoin"
+  },
+  "Bitcloud": {
+    "id": "bitcloud"
+  },
+  "Pakcoin": {
+    "id": "pakcoin"
+  },
+  "Helleniccoin": {
+    "id": "helleniccoin"
+  },
+  "BunnyCoin": {
+    "id": "bunnycoin"
+  },
+  "Zero": {
+    "id": "zero"
+  },
+  "Zoin": {
+    "id": "zoin"
+  },
+  "Karbowanec": {
+    "id": "karbowanec"
+  },
+  "CHNCoin": {
+    "id": "chncoin"
+  },
+  "PostCoin": {
+    "id": "postcoin"
+  },
+  "TrumpCoin": {
+    "id": "trumpcoin"
+  },
+  "42-coin": {
+    "id": "42-coin"
+  },
+  "Virta_Unique_Coin": {
+    "id": "virta-unique-coin"
+  },
+  "Greencoin": {
+    "id": "greencoin"
+  },
+  "EmberCoin": {
+    "id": "embercoin"
+  },
+  "Colossuscoin_V2": {
+    "id": "colossuscoin-v2"
+  },
+  "XP": {
+    "id": "xp"
+  },
+  "Happycoin": {
+    "id": "happycoin"
+  },
+  "LiteBar": {
+    "id": "litebar"
+  },
+  "8Bit": {
+    "id": "8bit"
+  },
+  "GlobalBoost-Y": {
+    "id": "globalboost-y"
+  },
+  "Sumokoin": {
+    "id": "sumokoin"
+  },
+  "Piggycoin": {
+    "id": "piggycoin"
+  },
+  "Rubies": {
+    "id": "rubies"
+  },
+  "Unify": {
+    "id": "unify"
+  },
+  "NewYorkCoin": {
+    "id": "newyorkcoin"
+  },
+  "Francs": {
+    "id": "francs"
+  },
+  "Vsync": {
+    "id": "vsync"
+  },
+  "DAS": {
+    "id": "das"
+  },
+  "Yocoin": {
+    "id": "yocoin"
+  },
+  "Deutsche_eMark": {
+    "id": "deutsche-emark"
+  },
+  "DigitalPrice": {
+    "id": "digitalprice"
+  },
+  "LanaCoin": {
+    "id": "lanacoin"
+  },
+  "Denarius": {
+    "id": "denarius-dnr"
+  },
+  "Atomic_Coin": {
+    "id": "atomic-coin"
+  },
+  "GoldBlocks": {
+    "id": "goldblocks"
+  },
+  "Newbium": {
+    "id": "newbium"
+  },
+  "TEKcoin": {
+    "id": "tekcoin"
+  },
+  "BitTokens": {
+    "id": "bittokens"
+  },
+  "Kurrent": {
+    "id": "kurrent"
+  },
+  "Scorecoin": {
+    "id": "scorecoin"
+  },
+  "Catcoin": {
+    "id": "catcoin"
+  },
+  "SwagBucks": {
+    "id": "swagbucks"
+  },
+  "Cryptojacks": {
+    "id": "cryptojacks"
+  },
+  "Nyancoin": {
+    "id": "nyancoin"
+  },
+  "BERNcash": {
+    "id": "berncash"
+  },
+  "808Coin": {
+    "id": "808coin"
+  },
+  "Xiaomicoin": {
+    "id": "xiaomicoin"
+  },
+  "TheGCCcoin": {
+    "id": "thegcccoin"
+  },
+  "Pesobit": {
+    "id": "pesobit"
+  },
+  "Linx": {
+    "id": "linx"
+  },
+  "AllSafe": {
+    "id": "allsafe"
+  },
+  "TittieCoin": {
+    "id": "tittiecoin"
+  },
+  "GlobalToken": {
+    "id": "globaltoken"
+  },
+  "Rupee": {
+    "id": "rupee"
+  },
+  "Useless_Ethereum_Token": {
+    "id": "useless-ethereum-token"
+  },
+  "Master_Swiscoin": {
+    "id": "master-swiscoin"
+  },
+  "Honey": {
+    "id": "honey"
+  },
+  "Quatloo": {
+    "id": "quatloo"
+  },
+  "Asiadigicoin": {
+    "id": "asiadigicoin"
+  },
+  "ChanCoin": {
+    "id": "chancoin"
+  },
+  "MojoCoin": {
+    "id": "mojocoin"
+  },
+  "Kayi": {
+    "id": "kayi"
+  },
+  "PRCoin": {
+    "id": "prcoin"
+  },
+  "Coinonat": {
+    "id": "coinonat"
+  },
+  "Veros": {
+    "id": "veros"
+  },
+  "Freicoin": {
+    "id": "freicoin"
+  },
+  "Prime-XI": {
+    "id": "prime-xi"
+  },
+  "Torcoin": {
+    "id": "torcoin-tor"
+  },
+  "Bitcoin_Scrypt": {
+    "id": "bitcoin-scrypt"
+  },
+  "EcoCoin": {
+    "id": "ecocoin"
+  },
+  "HealthyWormCoin": {
+    "id": "healthywormcoin"
+  },
+  "300_Token": {
+    "id": "300-token"
+  },
+  "BipCoin": {
+    "id": "bipcoin"
+  },
+  "RevolverCoin": {
+    "id": "revolvercoin"
+  },
+  "Eryllium": {
+    "id": "eryllium"
+  },
+  "DIBCOIN": {
+    "id": "dibcoin"
+  },
+  "TajCoin": {
+    "id": "tajcoin"
+  },
+  "SixEleven": {
+    "id": "sixeleven"
+  },
+  "SocialCoin": {
+    "id": "socialcoin-socc"
+  },
+  "Money": {
+    "id": "money"
+  },
+  "AmsterdamCoin": {
+    "id": "amsterdamcoin"
+  },
+  "BitCoal": {
+    "id": "bitcoal"
+  },
+  "CrevaCoin": {
+    "id": "crevacoin"
+  },
+  "Dix_Asset": {
+    "id": "dix-asset"
+  },
+  "Solarflarecoin": {
+    "id": "solarflarecoin"
+  },
+  "MindCoin": {
+    "id": "mindcoin"
+  },
+  "Grantcoin": {
+    "id": "grantcoin"
+  },
+  "UCoin": {
+    "id": "ucoin"
+  },
+  "CryptoWorldX_Token": {
+    "id": "cryptoworldx-token"
+  },
+  "Coimatic_2_0": {
+    "id": "coimatic-2"
+  },
+  "Wexcoin": {
+    "id": "wexcoin"
+  },
+  "Ebittree_Coin": {
+    "id": "ebittree-coin"
+  },
+  "BlakeStar": {
+    "id": "blakestar"
+  },
+  "LevoPlus": {
+    "id": "levoplus"
+  },
+  "Californium": {
+    "id": "californium"
+  },
+  "PizzaCoin": {
+    "id": "pizzacoin"
+  },
+  "Digital_Money_Bits": {
+    "id": "digital-money-bits"
+  },
+  "Soarcoin": {
+    "id": "soarcoin"
+  },
+  "SuperNET": {
+    "id": "supernet-unity"
+  },
+  "MUSE": {
+    "id": "bitshares-music"
+  },
+  "Jinn": {
+    "id": "jinn"
+  },
+  "Bitpark_Coin": {
+    "id": "bitpark-coin"
+  },
+  "Ethereum_Movie_Venture": {
+    "id": "ethereum-movie-venture"
+  },
+  "MediterraneanCoin": {
+    "id": "mediterraneancoin"
+  },
+  "Bitland": {
+    "id": "bitland"
+  },
+  "bitUSD": {
+    "id": "bitusd"
+  },
+  "XCurrency": {
+    "id": "xcurrency"
+  },
+  "AsiaCoin": {
+    "id": "asiacoin"
+  },
+  "InstantDEX": {
+    "id": "instantdex"
+  },
+  "Janus": {
+    "id": "janus"
+  },
+  "ICO_OpenLedger": {
+    "id": "ico-openledger"
+  },
+  "SecureCoin": {
+    "id": "securecoin"
+  },
+  "Ixcoin": {
+    "id": "ixcoin"
+  },
+  "Cryptofund": {
+    "id": "cryptofund"
+  },
+  "BlockPay": {
+    "id": "blockpay"
+  },
+  "GlobalCoin": {
+    "id": "globalcoin"
+  },
+  "Pangea_Poker": {
+    "id": "pangea-poker"
+  },
+  "BitcoinTX": {
+    "id": "bitcointx"
+  },
+  "Pandacoin": {
+    "id": "pandacoin-pnd"
+  },
+  "Digitalcoin": {
+    "id": "digitalcoin"
+  },
+  "Anoncoin": {
+    "id": "anoncoin"
+  },
+  "Arcade_Token": {
+    "id": "arcade-token"
+  },
+  "Sovereign_Hero": {
+    "id": "sovereign-hero"
+  },
+  "RussiaCoin": {
+    "id": "russiacoin"
+  },
+  "YashCoin": {
+    "id": "yashcoin"
+  },
+  "Ultimate_Secure_Cash": {
+    "id": "ultimate-secure-cash"
+  },
+  "Woodcoin": {
+    "id": "woodcoin"
+  },
+  "E4ROW": {
+    "id": "ether-for-the-rest-of-the-world"
+  },
+  "Casino": {
+    "id": "casino"
+  },
+  "Link_Platform": {
+    "id": "link-platform"
+  },
+  "ShadowCash": {
+    "id": "shadowcash"
+  },
+  "Canada_eCoin": {
+    "id": "canada-ecoin"
+  },
+  "TeslaCoin": {
+    "id": "teslacoin"
+  },
+  "GCoin": {
+    "id": "gcoin"
+  },
+  "Virtacoinplus": {
+    "id": "virtacoinplus"
+  },
+  "BTSR": {
+    "id": "btsr"
+  },
+  "SmartCoin": {
+    "id": "smartcoin"
+  },
+  "Version": {
+    "id": "version"
+  },
+  "Kobocoin": {
+    "id": "kobocoin"
+  },
+  "CryptCoin": {
+    "id": "cryptcoin"
+  },
+  "UFO_Coin": {
+    "id": "ufo-coin"
+  },
+  "Trollcoin": {
+    "id": "trollcoin"
+  },
+  "NobleCoin": {
+    "id": "noblecoin"
+  },
+  "MarteXcoin": {
+    "id": "martexcoin"
+  },
+  "Bitz": {
+    "id": "bitz"
+  },
+  "Devcoin": {
+    "id": "devcoin"
+  },
+  "Triangles": {
+    "id": "triangles"
+  },
+  "MetalCoin": {
+    "id": "metalcoin"
+  },
+  "ReeCoin": {
+    "id": "reecoin"
+  },
+  "HOdlcoin": {
+    "id": "hodlcoin"
+  },
+  "Bitstar": {
+    "id": "bitstar"
+  },
+  "CorgiCoin": {
+    "id": "corgicoin"
+  },
+  "Stress": {
+    "id": "stress"
+  },
+  "Miners_Reward_Token": {
+    "id": "miners-reward-token"
+  },
+  "HitCoin": {
+    "id": "hitcoin"
+  },
+  "UltraCoin": {
+    "id": "ultracoin"
+  },
+  "BritCoin": {
+    "id": "britcoin"
+  },
+  "Shorty": {
+    "id": "shorty"
+  },
+  "HoboNickels": {
+    "id": "hobonickels"
+  },
+  "GoldReserve": {
+    "id": "goldreserve"
+  },
+  "GAIA": {
+    "id": "gaia"
+  },
+  "FuelCoin": {
+    "id": "fuelcoin"
+  },
+  "MazaCoin": {
+    "id": "mazacoin"
+  },
+  "Rare_Pepe_Party": {
+    "id": "rare-pepe-party"
+  },
+  "The_Cypherfunks": {
+    "id": "the-cypherfunks"
+  },
+  "BTCtalkcoin": {
+    "id": "btctalkcoin"
+  },
+  "CageCoin": {
+    "id": "cagecoin"
+  },
+  "Titcoin": {
+    "id": "titcoin"
+  },
+  "SuperCoin": {
+    "id": "supercoin"
+  },
+  "CoinO": {
+    "id": "coin"
+  },
+  "Flycoin": {
+    "id": "flycoin"
+  },
+  "Ethbits": {
+    "id": "ethbits"
+  },
+  "Phoenixcoin": {
+    "id": "phoenixcoin"
+  },
+  "AgrolifeCoin": {
+    "id": "agrolifecoin"
+  },
+  "AmberCoin": {
+    "id": "ambercoin"
+  },
+  "FlutterCoin": {
+    "id": "fluttercoin"
+  },
+  "Emerald_Crypto": {
+    "id": "emerald"
+  },
+  "LTBcoin": {
+    "id": "ltbcoin"
+  },
+  "Mineum": {
+    "id": "mineum"
+  },
+  "iCoin": {
+    "id": "icoin"
+  },
+  "GameUnits": {
+    "id": "gameunits"
+  },
+  "Cannacoin": {
+    "id": "cannacoin"
+  },
+  "QubitCoin": {
+    "id": "qubitcoin"
+  },
+  "Tattoocoin": {
+    "id": "tattoocoin-limited"
+  },
+  "Coin2_1": {
+    "id": "coin2-1"
+  },
+  "Good_Karma": {
+    "id": "good-karma"
+  },
+  "GBCGoldCoin": {
+    "id": "gbcgoldcoin"
+  },
+  "ChessCoin": {
+    "id": "chesscoin"
+  },
+  "SwapToken": {
+    "id": "swaptoken"
+  },
+  "Bottlecaps": {
+    "id": "bottlecaps"
+  },
+  "Swing": {
+    "id": "swing"
+  },
+  "bitBTC": {
+    "id": "bitbtc"
+  },
+  "LottoCoin": {
+    "id": "lottocoin"
+  },
+  "Machinecoin": {
+    "id": "machinecoin"
+  },
+  "Truckcoin": {
+    "id": "truckcoin"
+  },
+  "Pascal_Lite": {
+    "id": "pascal-lite"
+  },
+  "Blakecoin": {
+    "id": "blakecoin"
+  },
+  "PureVidz": {
+    "id": "purevidz"
+  },
+  "PayCoin": {
+    "id": "paycoin2"
+  },
+  "Global_Tour_Coin": {
+    "id": "global-tour-coin"
+  },
+  "bitSilver": {
+    "id": "bitsilver"
+  },
+  "UniCoin": {
+    "id": "unicoin"
+  },
+  "Eurocoin": {
+    "id": "eurocoin"
+  },
+  "Universal_Currency": {
+    "id": "universal-currency"
+  },
+  "Veltor": {
+    "id": "veltor"
+  },
+  "Joincoin": {
+    "id": "joincoin"
+  },
+  "KibiCoin": {
+    "id": "kibicoin"
+  },
+  "ParallelCoin": {
+    "id": "parallelcoin"
+  },
+  "Ratecoin": {
+    "id": "ratecoin"
+  },
+  "CasinoCoin": {
+    "id": "casinocoin"
+  },
+  "bitGold": {
+    "id": "bitgold"
+  },
+  "Tigercoin": {
+    "id": "tigercoin"
+  },
+  "Bolivarcoin": {
+    "id": "bolivarcoin"
+  },
+  "KushCoin": {
+    "id": "kushcoin"
+  },
+  "Joulecoin": {
+    "id": "joulecoin"
+  },
+  "JetCoin": {
+    "id": "jetcoin"
+  },
+  "OctoCoin": {
+    "id": "octocoin"
+  },
+  "PetroDollar": {
+    "id": "petrodollar"
+  },
+  "Bitcurrency": {
+    "id": "bitcurrency"
+  },
+  "WayGuide": {
+    "id": "wayguide"
+  },
+  "bitEUR": {
+    "id": "biteur"
+  },
+  "Yacoin": {
+    "id": "yacoin"
+  },
+  "BigUp": {
+    "id": "bigup"
+  },
+  "Darsek": {
+    "id": "darsek"
+  },
+  "Guncoin": {
+    "id": "guncoin"
+  },
+  "PlatinumBAR": {
+    "id": "platinumbar"
+  },
+  "Sterlingcoin": {
+    "id": "sterlingcoin"
+  },
+  "OHM_Wallet": {
+    "id": "ohm-wallet"
+  },
+  "Solaris": {
+    "id": "solaris"
+  },
+  "Valorbit": {
+    "id": "valorbit"
+  },
+  "Elementrem": {
+    "id": "elementrem"
+  },
+  "RedCoin": {
+    "id": "redcoin"
+  },
+  "Unrealcoin": {
+    "id": "unrealcoin"
+  },
+  "C-Bit": {
+    "id": "c-bit"
+  },
+  "PipCoin": {
+    "id": "pipcoin"
+  },
+  "Aricoin": {
+    "id": "aricoin"
+  },
+  "GPU_Coin": {
+    "id": "gpu-coin"
+  },
+  "Sativacoin": {
+    "id": "sativacoin"
+  },
+  "Rimbit": {
+    "id": "rimbit"
+  },
+  "Universe": {
+    "id": "universe"
+  },
+  "Halcyon": {
+    "id": "halcyon"
+  },
+  "Cannation": {
+    "id": "cannation"
+  },
+  "SpaceCoin": {
+    "id": "spacecoin"
+  },
+  "VirtualCoin": {
+    "id": "virtualcoin"
+  },
+  "Gapcoin": {
+    "id": "gapcoin"
+  },
+  "AquariusCoin": {
+    "id": "aquariuscoin"
+  },
+  "SproutsExtreme": {
+    "id": "sproutsextreme"
+  },
+  "GoldPieces": {
+    "id": "goldpieces"
+  },
+  "Cypher": {
+    "id": "cypher"
+  },
+  "ICOBID": {
+    "id": "icobid"
+  },
+  "Marijuanacoin": {
+    "id": "marijuanacoin"
+  },
+  "020LondonCoin": {
+    "id": "o2olondoncoin"
+  },
+  "X-Coin": {
+    "id": "x-coin"
+  },
+  "Evotion": {
+    "id": "evotion"
+  },
+  "DigiCube": {
+    "id": "digicube"
+  },
+  "MTMGaming": {
+    "id": "mtmgaming"
+  },
+  "WMCoin": {
+    "id": "wmcoin"
+  },
+  "QuazarCoin": {
+    "id": "quazarcoin"
+  },
+  "Dollarcoin": {
+    "id": "dollarcoin"
+  },
+  "Firecoin": {
+    "id": "firecoin"
+  },
+  "Bitzeny": {
+    "id": "bitzeny"
+  },
+  "CompuCoin": {
+    "id": "compucoin"
+  },
+  "Spots": {
+    "id": "spots"
+  },
+  "BumbaCoin": {
+    "id": "bumbacoin"
+  },
+  "Putin_Classic": {
+    "id": "putin-classic"
+  },
+  "Acoin": {
+    "id": "acoin"
+  },
+  "UniBURST": {
+    "id": "uniburst"
+  },
+  "KiloCoin": {
+    "id": "kilocoin"
+  },
+  "Flaxscript": {
+    "id": "flaxscript"
+  },
+  "Wyvern": {
+    "id": "wyvern"
+  },
+  "Debitcoin": {
+    "id": "debitcoin"
+  },
+  "SecretCoin": {
+    "id": "secretcoin"
+  },
+  "Evil_Coin": {
+    "id": "evil-coin"
+  },
+  "Artex_Coin": {
+    "id": "artex-coin"
+  },
+  "PayCon": {
+    "id": "paycon"
+  },
+  "Independent_Money_System": {
+    "id": "independent-money-system"
+  },
+  "SatoshiMadness": {
+    "id": "satoshimadness"
+  },
+  "Jin_Coin": {
+    "id": "jin-coin"
+  },
+  "Prototanium": {
+    "id": "prototanium"
+  },
+  "PX": {
+    "id": "px"
+  },
+  "ARbit": {
+    "id": "arbit"
+  },
+  "Philosopher_Stones": {
+    "id": "philosopher-stones"
+  },
+  "FlavorCoin": {
+    "id": "flavorcoin"
+  },
+  "B3Coin": {
+    "id": "b3coin"
+  },
+  "Marscoin": {
+    "id": "marscoin"
+  },
+  "Franko": {
+    "id": "franko"
+  },
+  "Electra": {
+    "id": "electra"
+  },
+  "PopularCoin": {
+    "id": "popularcoin"
+  },
+  "Dobbscoin": {
+    "id": "dobbscoin"
+  },
+  "Chronos": {
+    "id": "chronos"
+  },
+  "SoonCoin": {
+    "id": "sooncoin"
+  },
+  "Jewels": {
+    "id": "jewels"
+  },
+  "NevaCoin": {
+    "id": "nevacoin"
+  },
+  "BeaverCoin": {
+    "id": "beavercoin"
+  },
+  "BillaryCoin": {
+    "id": "billarycoin"
+  },
+  "BitcoinFast": {
+    "id": "bitcoinfast"
+  },
+  "Digital_Rupees": {
+    "id": "digital-rupees"
+  },
+  "Hexx": {
+    "id": "hexx"
+  },
+  "Argentum": {
+    "id": "argentum"
+  },
+  "Bitcoin_Planet": {
+    "id": "bitcoin-planet"
+  },
+  "BenjiRolls": {
+    "id": "benjirolls"
+  },
+  "Dreamcoin": {
+    "id": "dreamcoin"
+  },
+  "MantraCoin": {
+    "id": "mantracoin"
+  },
+  "PonziCoin": {
+    "id": "ponzicoin"
+  },
+  "Uro": {
+    "id": "uro"
+  },
+  "RonPaulCoin": {
+    "id": "ronpaulcoin"
+  },
+  "MustangCoin": {
+    "id": "mustangcoin"
+  },
+  "Zurcoin": {
+    "id": "zurcoin"
+  },
+  "Kittehcoin": {
+    "id": "kittehcoin"
+  },
+  "Blackstar": {
+    "id": "blackstar"
+  },
+  "AntiBitcoin": {
+    "id": "antibitcoin"
+  },
+  "23_Skidoo": {
+    "id": "23-skidoo"
+  },
+  "Alexium": {
+    "id": "alexium"
+  },
+  "Neuro": {
+    "id": "neuro"
+  },
+  "Vault_Coin": {
+    "id": "vault-coin"
+  },
+  "Printerium": {
+    "id": "printerium"
+  },
+  "Bitcoin_21": {
+    "id": "bitcoin-21"
+  },
+  "Litecred": {
+    "id": "litecred"
+  },
+  "Photon": {
+    "id": "photon"
+  },
+  "FuzzBalls": {
+    "id": "fuzzballs"
+  },
+  "Virtacoin": {
+    "id": "virtacoin"
+  },
+  "MACRON": {
+    "id": "macron"
+  },
+  "MiloCoin": {
+    "id": "milocoin"
+  },
+  "Luna_Coin": {
+    "id": "luna-coin"
+  },
+  "GuccioneCoin": {
+    "id": "guccionecoin"
+  },
+  "BnrtxCoin": {
+    "id": "bnrtxcoin"
+  },
+  "CryptoEscudo": {
+    "id": "cryptoescudo"
+  },
+  "Concoin": {
+    "id": "concoin"
+  },
+  "Creatio": {
+    "id": "creatio"
+  },
+  "Destiny": {
+    "id": "destiny"
+  },
+  "Beatcoin": {
+    "id": "beatcoin"
+  },
+  "Metal_Music_Coin": {
+    "id": "metal-music-coin"
+  },
+  "Sling": {
+    "id": "sling"
+  },
+  "KingN_Coin": {
+    "id": "kingn-coin"
+  },
+  "VIP_Tokens": {
+    "id": "vip-tokens"
+  },
+  "Crypto": {
+    "id": "crypto"
+  },
+  "Zayedcoin": {
+    "id": "zayedcoin"
+  },
+  "G3N": {
+    "id": "genstake"
+  },
+  "Ride_My_Car": {
+    "id": "ride-my-car"
+  },
+  "Vector": {
+    "id": "vector"
+  },
+  "LeaCoin": {
+    "id": "leacoin"
+  },
+  "Tristar_Coin": {
+    "id": "tristar-coin"
+  },
+  "Iconic": {
+    "id": "iconic"
+  },
+  "BriaCoin": {
+    "id": "briacoin"
+  },
+  "AnarchistsPrime": {
+    "id": "anarchistsprime"
+  },
+  "Comet": {
+    "id": "comet"
+  },
+  "WARP": {
+    "id": "warp"
+  },
+  "SongCoin": {
+    "id": "songcoin"
+  },
+  "Orlycoin": {
+    "id": "orlycoin"
+  },
+  "Qibuck_Asset": {
+    "id": "qibuck-asset"
+  },
+  "BlazeCoin": {
+    "id": "blazecoin"
+  },
+  "Impact": {
+    "id": "impact"
+  },
+  "BitQuark": {
+    "id": "bitquark"
+  },
+  "Pulse": {
+    "id": "pulse"
+  },
+  "Cabbage": {
+    "id": "cabbage"
+  },
+  "Theresa_May_Coin": {
+    "id": "theresa-may-coin"
+  },
+  "GameBet_Coin": {
+    "id": "gamebet-coin"
+  },
+  "Steps": {
+    "id": "steps"
+  },
+  "BiosCrypto": {
+    "id": "bios-crypto"
+  },
+  "Ammo_Rewards": {
+    "id": "ammo-rewards"
+  },
+  "Dollar_Online": {
+    "id": "dollar-online"
+  },
+  "High_Voltage": {
+    "id": "high-voltage"
+  },
+  "ZetaMicron": {
+    "id": "zetamicron"
+  },
+  "DAPPSTER": {
+    "id": "dappster"
+  },
+  "Cashcoin": {
+    "id": "cashcoin"
+  },
+  "PLNcoin": {
+    "id": "plncoin"
+  },
+  "Doubloon": {
+    "id": "doubloon"
+  },
+  "TradecoinV2": {
+    "id": "tradecoin-v2"
+  },
+  "Slevin": {
+    "id": "slevin"
+  },
+  "RSGPcoin": {
+    "id": "rsgpcoin"
+  },
+  "Cthulhu_Offerings": {
+    "id": "cthulhu-offerings"
+  },
+  "BowsCoin": {
+    "id": "bowscoin"
+  },
+  "Xonecoin": {
+    "id": "xonecoin"
+  },
+  "Allion": {
+    "id": "allion"
+  },
+  "Impeachcoin": {
+    "id": "impeachcoin"
+  },
+  "GanjaCoin": {
+    "id": "ganjacoin"
+  },
+  "TAGRcoin": {
+    "id": "tagrcoin"
+  },
+  "Speedcash": {
+    "id": "speedcash"
+  },
+  "Argus": {
+    "id": "argus"
+  },
+  "ImpulseCoin": {
+    "id": "impulsecoin"
+  },
+  "OsmiumCoin": {
+    "id": "osmiumcoin"
+  },
+  "LiteBitcoin": {
+    "id": "litebitcoin"
+  },
+  "1CRedit": {
+    "id": "1credit"
+  },
+  "LetItRide": {
+    "id": "letitride"
+  },
+  "CacheCoin": {
+    "id": "cachecoin"
+  },
+  "Shilling": {
+    "id": "shilling"
+  },
+  "EGO": {
+    "id": "ego"
+  },
+  "BurstOcean": {
+    "id": "burstocean"
+  },
+  "CRTCoin": {
+    "id": "crtcoin"
+  },
+  "iBank": {
+    "id": "ibank"
+  },
+  "BBQCoin": {
+    "id": "bbqcoin"
+  },
+  "Revenu": {
+    "id": "revenu"
+  },
+  "GeertCoin": {
+    "id": "geertcoin"
+  },
+  "Hirocoin": {
+    "id": "hirocoin"
+  },
+  "DPAY": {
+    "id": "dpay"
+  },
+  "JobsCoin": {
+    "id": "jobscoin"
+  },
+  "Bitvolt": {
+    "id": "bitvolt"
+  },
+  "BioBar": {
+    "id": "biobar"
+  },
+  "PosEx": {
+    "id": "posex"
+  },
+  "CCMiner": {
+    "id": "ccminer"
+  },
+  "IslaCoin": {
+    "id": "islacoin"
+  },
+  "Zonecoin": {
+    "id": "zonecoin"
+  },
+  "VapersCoin": {
+    "id": "vaperscoin"
+  },
+  "Rawcoin": {
+    "id": "rawcoin2"
+  },
+  "Antilitecoin": {
+    "id": "antilitecoin"
+  },
+  "BTCDragon": {
+    "id": "btcdragon"
+  },
+  "Magnum": {
+    "id": "magnum"
+  },
+  "Elysium": {
+    "id": "elysium"
+  },
+  "Abncoin": {
+    "id": "abncoin"
+  },
+  "Save_and_Gain": {
+    "id": "save-and-gain"
+  },
+  "SydPak": {
+    "id": "sydpak"
+  },
+  "Lex4All": {
+    "id": "lex4all"
+  },
+  "NodeCoin": {
+    "id": "nodecoin"
+  },
+  "P7Coin": {
+    "id": "p7coin"
+  },
+  "Onix": {
+    "id": "onix"
+  },
+  "Enigma": {
+    "id": "enigma"
+  },
+  "JIO_Token": {
+    "id": "jio-token"
+  },
+  "Environ": {
+    "id": "environ"
+  },
+  "Selfiecoin": {
+    "id": "selfiecoin"
+  },
+  "Future_Digital_Currency": {
+    "id": "future-digital-currency"
+  },
+  "Powercoin": {
+    "id": "powercoin"
+  },
+  "Zcashshare": {
+    "id": "zcashshare"
+  },
+  "Digital_Credits": {
+    "id": "digital-credits"
+  },
+  "MikeTheMug": {
+    "id": "mikethemug"
+  },
+  "Xenixcoin": {
+    "id": "xenixcoin"
+  },
+  "CaliphCoin": {
+    "id": "caliphcoin"
+  },
+  "GXShares": {
+    "id": "gxshares"
+  },
+  "Fargocoin": {
+    "id": "fargocoin"
+  },
+  "Zilbercoin": {
+    "id": "zilbercoin"
+  },
+  "Bitcoin_Cash": {
+    "id": "bitcoin-cash"
+  },
+  "ICO": {
+    "id": "ico"
+  },
+  "DynamicCoin": {
+    "id": "dynamiccoin"
+  },
+  "Lepaoquan": {
+    "id": "lepaoquan"
+  },
+  "ATC_Coin": {
+    "id": "atc-coin"
+  },
+  "AntCoin": {
+    "id": "antcoin"
+  },
+  "BagCoin": {
+    "id": "bagcoin"
+  },
+  "Storjcoin_X": {
+    "id": "storjcoin-x"
+  },
+  "ToaCoin": {
+    "id": "toacoin"
+  },
+  "Gycoin": {
+    "id": "gycoin"
+  },
+  "InvisibleCoin": {
+    "id": "invisiblecoin"
+  },
+  "Sphre_AIR": {
+    "id": "sphre-air"
+  },
+  "AvatarCoin": {
+    "id": "avatarcoin"
+  },
+  "DAO_Casino": {
+    "id": "dao-casino"
+  },
+  "InflationCoin": {
+    "id": "inflationcoin"
+  },
+  "OpenAnx": {
+    "id": "openanx"
+  },
+  "Malcoin": {
+    "id": "malcoin"
+  },
+  "OperaCoin": {
+    "id": "operacoin"
+  },
+  "Linda": {
+    "id": "linda"
+  },
+  "TerraNova": {
+    "id": "terranova"
+  },
+  "ClubCoin": {
+    "id": "clubcoin"
+  },
+  "AxFunds": {
+    "id": "axfunds"
+  },
+  "GulfCoin": {
+    "id": "gulfcoin"
+  },
+  "Digitalfund": {
+    "id": "digitalfund"
+  },
+  "HarmonyCoin": {
+    "id": "harmonycoin-hmc"
+  },
+  "DHG": {
+    "id": "dhg"
+  },
+  "Goldpay_Coin": {
+    "id": "goldpay-coin"
+  },
+  "WA_Space": {
+    "id": "wa-space"
+  },
+  "Tychocoin": {
+    "id": "tychocoin"
+  },
+  "Pirate_Blocks": {
+    "id": "pirate-blocks"
+  },
+  "Birds": {
+    "id": "birds"
+  },
+  "DeusCoin": {
+    "id": "deuscoin"
+  },
+  "Pabyosi_Coin": {
+    "id": "pabyosi-coin-special"
+  },
+  "eBoost": {
+    "id": "eboostcoin"
+  },
+  "ShellPay": {
+    "id": "shellpay"
+  },
+  "Falcoin": {
+    "id": "falcoin"
+  },
+  "Cream": {
+    "id": "cream"
+  },
+  "Primalbase": {
+    "id": "primalbase"
+  },
+  "TeraCoin": {
+    "id": "teracoin"
+  },
+  "Aeternity": {
+    "id": "aeternity"
+  },
+  "Internet_of_People": {
+    "id": "internet-of-people"
+  },
+  "FedoraShare": {
+    "id": "fedorashare"
+  },
+  "Bitcoin_Unlimited": {
+    "id": "bitcoin-unlimited"
+  },
+  "Bitok": {
+    "id": "bitok"
+  },
+  "KashhCoin": {
+    "id": "kashhcoin"
+  },
+  "Paccoin": {
+    "id": "paccoin"
+  },
+  "RubleBit": {
+    "id": "rublebit"
+  },
+  "FireFlyCoin": {
+    "id": "fireflycoin"
+  },
+  "Golos_Gold": {
+    "id": "golos-gold"
+  },
+  "EDRCoin": {
+    "id": "edrcoin"
+  },
+  "StrongHands": {
+    "id": "stronghands"
+  },
+  "LePen": {
+    "id": "lepen"
+  },
+  "Flash": {
+    "id": "flash"
+  },
+  "Wowecoin": {
+    "id": "wowecoin"
+  },
+  "The_Aladin": {
+    "id": "the-aladin"
+  },
+  "GeyserCoin": {
+    "id": "geysercoin"
+  },
+  "Slimcoin": {
+    "id": "slimcoin"
+  },
+  "Primulon": {
+    "id": "primulon"
+  },
+  "WomenCoin": {
+    "id": "women"
+  },
+  "Internet_of_Things": {
+    "id": "internet-of-things"
+  },
+  "GAY_Money": {
+    "id": "gaycoin"
+  },
+  "President_Johnson": {
+    "id": "president-johnson"
+  },
+  "XDE_II": {
+    "id": "xde-ii"
+  },
+  "Mind_Gene": {
+    "id": "mind-gene"
+  },
+  "EMoneyPower": {
+    "id": "emoneypower"
+  },
+  "Motocoin": {
+    "id": "motocoin"
+  },
+  "TeslaCoilCoin": {
+    "id": "teslacoilcoin"
+  },
+  "Animecoin": {
+    "id": "animecoin"
+  },
+  "AlpaCoin": {
+    "id": "alpacoin"
+  },
+  "UtaCoin": {
+    "id": "utacoin"
+  },
+  "Braincoin": {
+    "id": "braincoin"
+  },
+  "Alphabit": {
+    "id": "alphabitcoinfund"
+  },
+  "President_Trump": {
+    "id": "president-trump"
+  },
+  "CampusCoin": {
+    "id": "campuscoin"
+  },
+  "PeepCoin": {
+    "id": "peepcoin"
+  },
+  "Tellurion": {
+    "id": "tellurion"
+  },
+  "Aces": {
+    "id": "aces"
+  },
+  "SOILcoin": {
+    "id": "soilcoin"
+  },
+  "BTCGold": {
+    "id": "btcgold"
+  },
+  "Project-X": {
+    "id": "project-x"
+  },
+  "Sakuracoin": {
+    "id": "sakuracoin"
+  },
+  "UR": {
+    "id": "ur"
+  },
+  "Gold_Pressed_Latinum": {
+    "id": "gold-pressed-latinum"
+  },
+  "MarxCoin": {
+    "id": "marxcoin"
+  },
+  "Royalties": {
+    "id": "royalties"
+  },
+  "T-coin": {
+    "id": "t-coin"
+  },
+  "Quotient": {
+    "id": "quotient"
+  },
+  "Donationcoin": {
+    "id": "donationcoin"
+  },
+  "UniversalRoyalCoin": {
+    "id": "universalroyalcoin"
+  },
+  "Avoncoin": {
+    "id": "avoncoin"
+  },
+  "Coupecoin": {
+    "id": "coupecoin"
+  },
+  "CyberCoin": {
+    "id": "cybercoin"
+  },
+  "True_Investment_Coin": {
+    "id": "true-investment-coin"
+  },
+  "Huncoin": {
+    "id": "huncoin"
+  },
+  "PeopleCoin": {
+    "id": "peoplecoin"
+  },
+  "Neptune_Classic": {
+    "id": "neptune-classic"
+  },
+  "Victoriouscoin": {
+    "id": "victoriouscoin"
+  },
+  "RabbitCoin": {
+    "id": "rabbitcoin"
+  },
+  "DraftCoin": {
+    "id": "draftcoin"
+  },
+  "Bitgem": {
+    "id": "bitgem"
+  },
+  "Safe_Trade_Coin": {
+    "id": "safe-trade-coin"
+  },
+  "MMXVI": {
+    "id": "mmxvi"
+  },
+  "RoyalCoin": {
+    "id": "royalcoin"
+  },
+  "PiCoin": {
+    "id": "picoin"
+  },
+  "LandCoin": {
+    "id": "landcoin"
+  },
+  "Bitradio": {
+    "id": "bitradio"
+  },
+  "Fazzcoin": {
+    "id": "fazzcoin"
+  },
+  "MoneyCoin": {
+    "id": "moneycoin"
+  },
+  "RHFCoin": {
+    "id": "rhfcoin"
+  },
+  "PrismChain": {
+    "id": "prismchain"
+  },
+  "Halloween_Coin": {
+    "id": "halloween-coin"
+  },
+  "SunContract": {
+    "id": "suncontract"
+  },
+  "AMIS": {
+    "id": "amis"
+  },
+  "TrickyCoin": {
+    "id": "trickycoin"
+  },
+  "MIYUCoin": {
+    "id": "miyucoin"
+  },
+  "RoyalCoin_2": {
+    "id": "royalcoin-2"
+  },
+  "SoulCoin": {
+    "id": "soulcoin"
+  },
+  "Moneta": {
+    "id": "moneta2"
+  },
+  "TodayCoin": {
+    "id": "todaycoin"
+  },
+  "Opal": {
+    "id": "opal"
+  },
+  "UNCoin": {
+    "id": "uncoin"
+  },
+  "IvugeoCoin": {
+    "id": "ivugeocoin"
+  },
+  "netBit": {
+    "id": "netbit"
+  },
+  "BatCoin": {
+    "id": "batcoin"
+  },
+  "Dashs": {
+    "id": "dashs"
+  },
+  "RichCoin": {
+    "id": "richcoin"
+  },
+  "Global_Business_Revolution": {
+    "id": "global-business-revolution"
+  },
+  "Remicoin": {
+    "id": "remicoin"
+  },
+  "BetaCoin": {
+    "id": "betacoin"
+  },
+  "Cashme": {
+    "id": "cashme"
+  },
+  "BlazerCoin": {
+    "id": "blazercoin"
+  },
+  "Mavro": {
+    "id": "mavro"
+  },
+  "GoldUnionCoin": {
+    "id": "goldunioncoin"
+  },
+  "Ergo": {
+    "id": "ergo"
+  },
+  "9COIN": {
+    "id": "9coin"
+  },
+  "EggCoin": {
+    "id": "eggcoin"
+  },
+  "First_Bitcoin": {
+    "id": "first-bitcoin"
+  },
+  "SHACoin": {
+    "id": "shacoin"
+  },
+  "Bitcedi": {
+    "id": "bitcedi"
+  },
+  "PayPeer": {
+    "id": "paypeer"
+  },
+  "IrishCoin": {
+    "id": "irishcoin"
+  },
+  "Quebecoin": {
+    "id": "quebecoin"
+  },
+  "TechShares": {
+    "id": "techshares"
+  },
+  "Voyacoin": {
+    "id": "voyacoin"
+  },
+  "Advanced_Internet_Blocks": {
+    "id": "advanced-internet-blocks"
+  },
+  "Golfcoin": {
+    "id": "golfcoin"
+  },
+  "Antimatter": {
+    "id": "antimatter"
+  },
+  "BitAlphaCoin": {
+    "id": "bitalphacoin"
+  },
+  "VegasCoin": {
+    "id": "vegascoin"
+  },
+  "PinkDog": {
+    "id": "pinkdog"
+  },
+  "SnakeEyes": {
+    "id": "snakeeyes"
+  },
+  "Elacoin": {
+    "id": "elacoin"
+  },
+  "Skeincoin": {
+    "id": "skeincoin"
+  },
+  "TROPTIONS": {
+    "id": "troptions"
+  },
+  "BitCentavo": {
+    "id": "bitcentavo"
+  },
+  "LeviarCoin": {
+    "id": "leviarcoin"
+  },
+  "Dubstep": {
+    "id": "dubstep"
+  },
+  "Wowcoin": {
+    "id": "wowcoin"
+  },
+  "Topaz_Coin": {
+    "id": "topaz"
+  },
+  "Happy_Creator_Coin": {
+    "id": "happy-creator-coin"
+  },
+  "ZSEcoin": {
+    "id": "zsecoin"
+  },
+  "Axiom": {
+    "id": "axiom"
+  },
+  "MobileCash": {
+    "id": "mobilecash"
+  },
+  "X2": {
+    "id": "x2"
+  },
+  "BestChain": {
+    "id": "bestchain"
+  },
+  "FuturXe": {
+    "id": "futurexe"
+  },
+  "Yescoin": {
+    "id": "yescoin"
+  },
+  "Sharkcoin": {
+    "id": "sharkcoin"
+  },
+  "PokeCoin": {
+    "id": "pokecoin"
+  },
+  "Karmacoin": {
+    "id": "karmacoin"
+  },
+  "KolschCoin": {
+    "id": "kolschcoin"
+  },
+  "FrankyWillCoin": {
+    "id": "frankywillcoin"
+  },
+  "WeAreSatoshi": {
+    "id": "wearesatoshi"
+  },
+  "SuperTurboStake": {
+    "id": "superturbostake"
+  },
+  "GoldMaxCoin": {
+    "id": "goldmaxcoin"
+  },
+  "FutCoin": {
+    "id": "futcoin"
+  },
+  "UGAIN": {
+    "id": "ugain"
+  },
+  "Lazaruscoin": {
+    "id": "lazaruscoin"
+  },
+  "TeamUp": {
+    "id": "teamup"
+  },
+  "Rcoin": {
+    "id": "rcoin"
+  },
+  "TurboCoin": {
+    "id": "turbocoin"
+  },
+  "TheCreed": {
+    "id": "thecreed"
+  },
+  "The_Vegan_Initiative": {
+    "id": "the-vegan-initiative"
+  },
+  "ShellCoin": {
+    "id": "shellcoin"
+  },
+  "Fonziecoin": {
+    "id": "fonziecoin"
+  },
+  "Yogold": {
+    "id": "yogold"
+  },
+  "Opescoin": {
+    "id": "opescoin"
+  },
+  "Bongger": {
+    "id": "bongger"
+  },
+  "DeltaCredits": {
+    "id": "deltacredits"
+  },
+  "Sync": {
+    "id": "sync"
+  },
+  "Psilocybin": {
+    "id": "psilocybin"
+  },
+  "Cubits": {
+    "id": "cubits"
+  },
+  "International_Diamond": {
+    "id": "international-diamond"
+  },
+  "Quartz": {
+    "id": "quartz-qrz"
+  },
+  "ELcoin": {
+    "id": "elcoin"
+  },
+  "STEX": {
+    "id": "stex"
+  },
+  "Clinton": {
+    "id": "clinton"
+  },
+  "Operand": {
+    "id": "operand"
+  },
+  "Cheapcoin": {
+    "id": "cheapcoin"
+  },
+  "Digital_Bullion_Gold": {
+    "id": "digital-bullion-gold"
+  },
+  "Gambleo": {
+    "id": "gambleo"
+  },
+  "SportsCoin": {
+    "id": "sportscoin"
+  },
+  "President_Clinton": {
+    "id": "president-clinton"
+  },
+  "LinkedCoin": {
+    "id": "linkedcoin"
+  },
+  "Xaucoin": {
+    "id": "xaucoin"
+  },
+  "President_Sanders": {
+    "id": "president-sanders"
+  },
+  "OCOW": {
+    "id": "ocow"
+  },
+  "SafeCoin": {
+    "id": "safecoin"
+  },
+  "AsicCoin": {
+    "id": "asiccoin"
+  },
+  "LAthaan": {
+    "id": "lathaan"
+  },
+  "Cycling_Coin": {
+    "id": "cycling-coin"
+  },
+  "CBD_Crystals": {
+    "id": "cbd-crystals"
+  },
+  "Tyrocoin": {
+    "id": "tyrocoin"
+  },
+  "GameLeagueCoin": {
+    "id": "gameleaguecoin"
+  },
+  "Omicron": {
+    "id": "omicron"
+  },
+  "microCoin": {
+    "id": "microcoin"
+  },
+  "DarkLisk": {
+    "id": "darklisk"
+  },
+  "CoExistCoin": {
+    "id": "coexistcoin"
+  },
+  "CryptoBuck": {
+    "id": "cryptobuck"
+  },
+  "Qora": {
+    "id": "qora"
+  },
+  "OracleChain": {
+    "id": "oraclechain"
+  },
+  "Regacoin": {
+    "id": "regacoin"
+  },
+  "Bit20": {
+    "id": "bit20"
+  },
+  "ZenGold": {
+    "id": "zengold"
+  },
+  "CVCoin": {
+    "id": "cvcoin"
+  },
+  "OBITS_WARRANT": {
+    "id": "warrant"
+  }
+}

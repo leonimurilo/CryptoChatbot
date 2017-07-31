@@ -13,7 +13,6 @@
         port = process.env.PORT || process.env.VCAP_APP_PORT || 6010;
 
 
-
     app.use(express.static(path.join(__dirname + '/client')));
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json({limit: "50mb"}));

@@ -7,7 +7,8 @@
         chat(app);
 
         app.get("*", function (req, res) {
-            res.sendFile('index.html', { root: './client'});
+            res.status(200).sendFile('index.html', { root: './client'});
         });
+
     };
 }());
