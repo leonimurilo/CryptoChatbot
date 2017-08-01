@@ -1,1 +1,2 @@
 export const SEND_MESSAGE = "SEND_MESSAGE";
+export const SHOW_USER_MESSAGE = "SHOW_USER_MESSAGE";

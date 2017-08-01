@@ -8,7 +8,9 @@
         });
 
         app.post("/api/message", function (req, res) {
-            res.status(200).send("Response123");
+            console.log("message");
+            setTimeout(function(){ res.status(200).send("Response123"); }, 3000);
+
         });
 
     };
