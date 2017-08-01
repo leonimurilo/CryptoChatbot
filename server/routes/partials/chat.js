@@ -7,6 +7,10 @@
             res.status(200).send("Test working");
         });
 
+        app.post("/api/message", function (req, res) {
+            res.status(200).send("Response");
+        });
+
     };
 
 }());
