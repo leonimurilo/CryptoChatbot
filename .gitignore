@@ -35,3 +35,4 @@ build/Release
 
 .idea
 /.env
+/client/dist/

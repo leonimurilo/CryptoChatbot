@@ -54,7 +54,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 var SEND_MESSAGE = exports.SEND_MESSAGE = "SEND_MESSAGE";
 var SHOW_USER_MESSAGE = exports.SHOW_USER_MESSAGE = "SHOW_USER_MESSAGE";
-var UPDATE_CONVERSATION_CONTEXT = exports.UPDATE_CONVERSATION_CONTEXT = "SHOW_USER_MESSAGE";
+var UPDATE_CONVERSATION_CONTEXT = exports.UPDATE_CONVERSATION_CONTEXT = "UPDATE_CONVERSATION_CONTEXT";
 
 },{}],3:[function(require,module,exports){
 "use strict";
@@ -390,7 +390,6 @@ exports.default = function () {
 
         case _types.SHOW_USER_MESSAGE:
             {
-                console.log("CHAMADO");
                 var _newState = _lodash2.default.map(state, _lodash2.default.clone);
                 _newState.push({
                     user: true,
