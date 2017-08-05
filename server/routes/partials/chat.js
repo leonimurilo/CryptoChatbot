@@ -22,7 +22,7 @@
                 text:msg,
                 context
             }).then(function (data) {
-                console.log(util.inspect(data, {showHidden: false, depth: null}));
+                console.log(util.inspect(data.response, {showHidden: false, depth: null}));
                 console.log("\n===================================================\n");
                 res.status(200).send(ResponseEnhancer.handleResponse(data.response));
             }).catch(function (err) {
