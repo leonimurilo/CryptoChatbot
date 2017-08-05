@@ -43,4 +43,10 @@ function mapDispatchToProps(dispatch){
     return bindActionCreators({sendMessage}, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(ChatBox);
+function mapStateToProps({conversationContext}){
+    return {
+        context: conversationContext
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ChatBox);
