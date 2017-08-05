@@ -7,10 +7,10 @@ export default function (state = [], action) {
             let newState = _.map(state, _.clone);
             newState.push({
                 user: false,
-                content: action.payload.data
+                content: action.payload
             });
-            console.log(action.payload, "payload");
-            console.log(newState, "new state");
+            // console.log(action.payload, "payload");
+            // console.log(newState, "new state");
             return newState;
         }
 
@@ -20,8 +20,8 @@ export default function (state = [], action) {
                 user: true,
                 content: action.payload
             });
-            console.log(action.payload, "payload");
-            console.log(newState, "new state");
+            // console.log(action.payload, "payload");
+            // console.log(newState, "new state");
             return newState;
         }
 

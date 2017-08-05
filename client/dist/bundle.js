@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.sendMessage = sendMessage;
-exports.showUserMessage = showUserMessage;
 
 var _axios = require("axios");
 
@@ -17,16 +16,25 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function sendMessage(message) {
     var requestPromise = _axios2.default.post("/api/message", message);
-    return {
-        type: _types.SEND_MESSAGE,
-        payload: requestPromise
-    };
-}
 
-function showUserMessage(message) {
-    return {
-        type: _types.SHOW_USER_MESSAGE,
-        payload: message
+    // Redxu Thunk allows returning functions
+    return function (dispatch) {
+        dispatch({
+            type: _types.SHOW_USER_MESSAGE,
+            payload: message
+        });
+
+        requestPromise.then(function (_ref) {
+            var data = _ref.data;
+
+            // console.log(data);
+            dispatch({
+                type: _types.SEND_MESSAGE,
+                payload: data
+            });
+        }).catch(function (err) {
+            console.log(err);
+        });
     };
 }
 
@@ -125,9 +133,8 @@ var ChatBox = function (_Component) {
         key: "onFormSubmit",
         value: function onFormSubmit(event) {
             event.preventDefault();
-            this.props.showUserMessage(this.state.message);
-            this.setState({ message: "" });
             this.props.sendMessage(this.state.message);
+            this.setState({ message: "" });
         }
     }, {
         key: "render",
@@ -157,12 +164,12 @@ var ChatBox = function (_Component) {
 }(_react.Component);
 
 function mapDispatchToProps(dispatch) {
-    return (0, _redux.bindActionCreators)({ sendMessage: _index.sendMessage, showUserMessage: _index.showUserMessage }, dispatch);
+    return (0, _redux.bindActionCreators)({ sendMessage: _index.sendMessage }, dispatch);
 }
 
 exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(ChatBox);
 
-},{"../actions/index":1,"./MessagesBox":6,"react":259,"react-redux":84,"redux":266}],5:[function(require,module,exports){
+},{"../actions/index":1,"./MessagesBox":6,"react":259,"react-redux":84,"redux":267}],5:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -286,6 +293,10 @@ var _reduxPromise = require("redux-promise");
 
 var _reduxPromise2 = _interopRequireDefault(_reduxPromise);
 
+var _reduxThunk = require("redux-thunk");
+
+var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
+
 var _reactRouterDom = require("react-router-dom");
 
 var _reducers = require("./reducers");
@@ -302,7 +313,7 @@ var _Chat2 = _interopRequireDefault(_Chat);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var createStoreWithMiddleware = (0, _redux.applyMiddleware)(_reduxPromise2.default)(_redux.createStore);
+var createStoreWithMiddleware = (0, _redux.applyMiddleware)(_reduxPromise2.default, _reduxThunk2.default)(_redux.createStore);
 
 _reactDom2.default.render(_react2.default.createElement(
     _reactRedux.Provider,
@@ -323,7 +334,7 @@ _reactDom2.default.render(_react2.default.createElement(
     )
 ), document.querySelector(".container"));
 
-},{"./components/Chat":3,"./components/Landing":5,"./reducers":9,"react":259,"react-dom":81,"react-redux":84,"react-router-dom":109,"redux":266,"redux-promise":260}],8:[function(require,module,exports){
+},{"./components/Chat":3,"./components/Landing":5,"./reducers":9,"react":259,"react-dom":81,"react-redux":84,"react-router-dom":109,"redux":267,"redux-promise":260,"redux-thunk":261}],8:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -340,10 +351,10 @@ exports.default = function () {
                 var newState = _lodash2.default.map(state, _lodash2.default.clone);
                 newState.push({
                     user: false,
-                    content: action.payload.data
+                    content: action.payload
                 });
-                console.log(action.payload, "payload");
-                console.log(newState, "new state");
+                // console.log(action.payload, "payload");
+                // console.log(newState, "new state");
                 return newState;
             }
 
@@ -354,8 +365,8 @@ exports.default = function () {
                     user: true,
                     content: action.payload
                 });
-                console.log(action.payload, "payload");
-                console.log(_newState, "new state");
+                // console.log(action.payload, "payload");
+                // console.log(newState, "new state");
                 return _newState;
             }
 
@@ -393,7 +404,7 @@ var rootReducer = (0, _redux.combineReducers)({
 
 exports.default = rootReducer;
 
-},{"./Messages":8,"redux":266}],10:[function(require,module,exports){
+},{"./Messages":8,"redux":267}],10:[function(require,module,exports){
 module.exports = require('./lib/axios');
 },{"./lib/axios":12}],11:[function(require,module,exports){
 (function (process){
@@ -17800,7 +17811,7 @@ function wrapActionCreators(actionCreators) {
     return (0, _redux.bindActionCreators)(actionCreators, dispatch);
   };
 }
-},{"redux":266}],88:[function(require,module,exports){
+},{"redux":267}],88:[function(require,module,exports){
 var root = require('./_root');
 
 /** Built-in value references. */
@@ -18664,7 +18675,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"./PathUtils":113,"resolve-pathname":278,"value-equal":282}],113:[function(require,module,exports){
+},{"./PathUtils":113,"resolve-pathname":279,"value-equal":283}],113:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -19034,7 +19045,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"./DOMUtils":111,"./LocationUtils":112,"./PathUtils":113,"./createTransitionManager":117,"invariant":65,"warning":283}],115:[function(require,module,exports){
+},{"./DOMUtils":111,"./LocationUtils":112,"./PathUtils":113,"./createTransitionManager":117,"invariant":65,"warning":284}],115:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -19359,7 +19370,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"./DOMUtils":111,"./LocationUtils":112,"./PathUtils":113,"./createTransitionManager":117,"invariant":65,"warning":283}],116:[function(require,module,exports){
+},{"./DOMUtils":111,"./LocationUtils":112,"./PathUtils":113,"./createTransitionManager":117,"invariant":65,"warning":284}],116:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -19530,7 +19541,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"./LocationUtils":112,"./PathUtils":113,"./createTransitionManager":117,"warning":283}],117:[function(require,module,exports){
+},{"./LocationUtils":112,"./PathUtils":113,"./createTransitionManager":117,"warning":284}],117:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -19616,7 +19627,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":283}],118:[function(require,module,exports){
+},{"warning":284}],118:[function(require,module,exports){
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
@@ -20427,7 +20438,7 @@ Route.childContextTypes = {
   router: _propTypes2.default.object.isRequired
 };
 exports.default = Route;
-},{"./matchPath":128,"prop-types":76,"react":259,"warning":283}],124:[function(require,module,exports){
+},{"./matchPath":128,"prop-types":76,"react":259,"warning":284}],124:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20547,7 +20558,7 @@ Router.childContextTypes = {
   router: _propTypes2.default.object.isRequired
 };
 exports.default = Router;
-},{"invariant":65,"prop-types":76,"react":259,"warning":283}],125:[function(require,module,exports){
+},{"invariant":65,"prop-types":76,"react":259,"warning":284}],125:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20813,7 +20824,7 @@ Switch.propTypes = {
   location: _propTypes2.default.object
 };
 exports.default = Switch;
-},{"./matchPath":128,"prop-types":76,"react":259,"warning":283}],127:[function(require,module,exports){
+},{"./matchPath":128,"prop-types":76,"react":259,"warning":284}],127:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38714,6 +38725,30 @@ module.exports = exports['default'];
 'use strict';
 
 exports.__esModule = true;
+function createThunkMiddleware(extraArgument) {
+  return function (_ref) {
+    var dispatch = _ref.dispatch,
+        getState = _ref.getState;
+    return function (next) {
+      return function (action) {
+        if (typeof action === 'function') {
+          return action(dispatch, getState, extraArgument);
+        }
+
+        return next(action);
+      };
+    };
+  };
+}
+
+var thunk = createThunkMiddleware();
+thunk.withExtraArgument = createThunkMiddleware;
+
+exports['default'] = thunk;
+},{}],262:[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -38769,7 +38804,7 @@ function applyMiddleware() {
     };
   };
 }
-},{"./compose":264}],262:[function(require,module,exports){
+},{"./compose":265}],263:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38821,7 +38856,7 @@ function bindActionCreators(actionCreators, dispatch) {
   }
   return boundActionCreators;
 }
-},{}],263:[function(require,module,exports){
+},{}],264:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -38967,7 +39002,7 @@ function combineReducers(reducers) {
   };
 }
 }).call(this,require('_process'))
-},{"./createStore":265,"./utils/warning":267,"_process":72,"lodash/isPlainObject":277}],264:[function(require,module,exports){
+},{"./createStore":266,"./utils/warning":268,"_process":72,"lodash/isPlainObject":278}],265:[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -39004,7 +39039,7 @@ function compose() {
     };
   });
 }
-},{}],265:[function(require,module,exports){
+},{}],266:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -39266,7 +39301,7 @@ var ActionTypes = exports.ActionTypes = {
     replaceReducer: replaceReducer
   }, _ref2[_symbolObservable2['default']] = observable, _ref2;
 }
-},{"lodash/isPlainObject":277,"symbol-observable":279}],266:[function(require,module,exports){
+},{"lodash/isPlainObject":278,"symbol-observable":280}],267:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -39315,7 +39350,7 @@ exports.bindActionCreators = _bindActionCreators2['default'];
 exports.applyMiddleware = _applyMiddleware2['default'];
 exports.compose = _compose2['default'];
 }).call(this,require('_process'))
-},{"./applyMiddleware":261,"./bindActionCreators":262,"./combineReducers":263,"./compose":264,"./createStore":265,"./utils/warning":267,"_process":72}],267:[function(require,module,exports){
+},{"./applyMiddleware":262,"./bindActionCreators":263,"./combineReducers":264,"./compose":265,"./createStore":266,"./utils/warning":268,"_process":72}],268:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -39341,27 +39376,27 @@ function warning(message) {
   } catch (e) {}
   /* eslint-enable no-empty */
 }
-},{}],268:[function(require,module,exports){
+},{}],269:[function(require,module,exports){
 arguments[4][88][0].apply(exports,arguments)
-},{"./_root":275,"dup":88}],269:[function(require,module,exports){
+},{"./_root":276,"dup":88}],270:[function(require,module,exports){
 arguments[4][89][0].apply(exports,arguments)
-},{"./_Symbol":268,"./_getRawTag":272,"./_objectToString":273,"dup":89}],270:[function(require,module,exports){
+},{"./_Symbol":269,"./_getRawTag":273,"./_objectToString":274,"dup":89}],271:[function(require,module,exports){
 arguments[4][90][0].apply(exports,arguments)
-},{"dup":90}],271:[function(require,module,exports){
+},{"dup":90}],272:[function(require,module,exports){
 arguments[4][91][0].apply(exports,arguments)
-},{"./_overArg":274,"dup":91}],272:[function(require,module,exports){
+},{"./_overArg":275,"dup":91}],273:[function(require,module,exports){
 arguments[4][92][0].apply(exports,arguments)
-},{"./_Symbol":268,"dup":92}],273:[function(require,module,exports){
+},{"./_Symbol":269,"dup":92}],274:[function(require,module,exports){
 arguments[4][93][0].apply(exports,arguments)
-},{"dup":93}],274:[function(require,module,exports){
+},{"dup":93}],275:[function(require,module,exports){
 arguments[4][94][0].apply(exports,arguments)
-},{"dup":94}],275:[function(require,module,exports){
+},{"dup":94}],276:[function(require,module,exports){
 arguments[4][95][0].apply(exports,arguments)
-},{"./_freeGlobal":270,"dup":95}],276:[function(require,module,exports){
+},{"./_freeGlobal":271,"dup":95}],277:[function(require,module,exports){
 arguments[4][96][0].apply(exports,arguments)
-},{"dup":96}],277:[function(require,module,exports){
+},{"dup":96}],278:[function(require,module,exports){
 arguments[4][97][0].apply(exports,arguments)
-},{"./_baseGetTag":269,"./_getPrototype":271,"./isObjectLike":276,"dup":97}],278:[function(require,module,exports){
+},{"./_baseGetTag":270,"./_getPrototype":272,"./isObjectLike":277,"dup":97}],279:[function(require,module,exports){
 'use strict';
 
 var isAbsolute = function isAbsolute(pathname) {
@@ -39432,10 +39467,10 @@ var resolvePathname = function resolvePathname(to) {
 };
 
 module.exports = resolvePathname;
-},{}],279:[function(require,module,exports){
+},{}],280:[function(require,module,exports){
 module.exports = require('./lib/index');
 
-},{"./lib/index":280}],280:[function(require,module,exports){
+},{"./lib/index":281}],281:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -39467,7 +39502,7 @@ if (typeof self !== 'undefined') {
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./ponyfill":281}],281:[function(require,module,exports){
+},{"./ponyfill":282}],282:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -39491,7 +39526,7 @@ function symbolObservablePonyfill(root) {
 
 	return result;
 };
-},{}],282:[function(require,module,exports){
+},{}],283:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -39532,7 +39567,7 @@ var valueEqual = function valueEqual(a, b) {
 };
 
 exports.default = valueEqual;
-},{}],283:[function(require,module,exports){
+},{}],284:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.

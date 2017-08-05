@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-import {sendMessage, showUserMessage} from "../actions/index"
+import {sendMessage} from "../actions/index"
 import MessagesBox from "./MessagesBox";
 
 class ChatBox extends Component{
@@ -19,9 +19,8 @@ class ChatBox extends Component{
 
     onFormSubmit(event){
         event.preventDefault();
-        this.props.showUserMessage(this.state.message);
-        this.setState({message: ""});
         this.props.sendMessage(this.state.message);
+        this.setState({message: ""});
     }
 
     render(){
@@ -41,7 +40,7 @@ class ChatBox extends Component{
 }
 
 function mapDispatchToProps(dispatch){
-    return bindActionCreators({sendMessage, showUserMessage}, dispatch);
+    return bindActionCreators({sendMessage}, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(ChatBox);
