@@ -19,7 +19,7 @@ class ChatBox extends Component{
 
     onFormSubmit(event){
         event.preventDefault();
-        this.props.sendMessage(this.state.message);
+        this.props.sendMessage(this.state.message, this.props.context);
         this.setState({message: ""});
     }
 

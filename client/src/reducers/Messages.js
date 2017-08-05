@@ -12,8 +12,8 @@ export default function (state = [], action) {
                 });
             });
 
-            console.log(action.payload, "payload");
-            console.log(newState, "new state");
+            // console.log(action.payload, "payload");
+            // console.log(newState, "new state");
             return newState;
         }
 

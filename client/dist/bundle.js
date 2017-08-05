@@ -30,7 +30,7 @@ function sendMessage(message, context) {
         requestPromise.then(function (_ref) {
             var data = _ref.data;
 
-            // console.log(data);
+            console.log(data.context);
             dispatch({
                 type: _types.SEND_MESSAGE,
                 payload: data.output
@@ -142,7 +142,7 @@ var ChatBox = function (_Component) {
         key: "onFormSubmit",
         value: function onFormSubmit(event) {
             event.preventDefault();
-            this.props.sendMessage(this.state.message);
+            this.props.sendMessage(this.state.message, this.props.context);
             this.setState({ message: "" });
         }
     }, {
@@ -176,7 +176,16 @@ function mapDispatchToProps(dispatch) {
     return (0, _redux.bindActionCreators)({ sendMessage: _index.sendMessage }, dispatch);
 }
 
-exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(ChatBox);
+function mapStateToProps(_ref) {
+    var conversationContext = _ref.conversationContext;
+
+
+    return {
+        context: conversationContext
+    };
+}
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(ChatBox);
 
 },{"../actions/index":1,"./MessagesBox":6,"react":260,"react-redux":85,"redux":268}],5:[function(require,module,exports){
 "use strict";
@@ -356,7 +365,7 @@ exports.default = function () {
 
     switch (action.type) {
         case _types.UPDATE_CONVERSATION_CONTEXT:
-            return state; // to be changed (update context using action.payload)
+            return action.payload;
         default:
             return state;
     }
@@ -386,8 +395,8 @@ exports.default = function () {
                     });
                 });
 
-                console.log(action.payload, "payload");
-                console.log(newState, "new state");
+                // console.log(action.payload, "payload");
+                // console.log(newState, "new state");
                 return newState;
             }
 
