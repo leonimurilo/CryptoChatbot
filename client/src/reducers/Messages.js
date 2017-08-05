@@ -5,10 +5,13 @@ export default function (state = [], action) {
     switch(action.type){
         case SEND_MESSAGE: {
             let newState = _.map(state, _.clone);
-            newState.push({
-                user: false,
-                content: action.payload
+            action.payload.forEach(message => {
+                newState.push({
+                    user: false,
+                    content: message
+                });
             });
+
             console.log(action.payload, "payload");
             console.log(newState, "new state");
             return newState;

@@ -22,14 +22,14 @@ export function sendMessage(message, context) {
             dispatch(
                 {
                     type: SEND_MESSAGE,
-                    payload: data
+                    payload: data.output
                 }
             );
 
             dispatch(
                 {
                     type: UPDATE_CONVERSATION_CONTEXT,
-                    payload: data
+                    payload: data.context
                 }
             );
         }).catch(err => {

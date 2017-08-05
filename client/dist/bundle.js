@@ -33,12 +33,12 @@ function sendMessage(message, context) {
             // console.log(data);
             dispatch({
                 type: _types.SEND_MESSAGE,
-                payload: data
+                payload: data.output
             });
 
             dispatch({
                 type: _types.UPDATE_CONVERSATION_CONTEXT,
-                payload: data
+                payload: data.context
             });
         }).catch(function (err) {
             console.log(err);
@@ -379,10 +379,13 @@ exports.default = function () {
         case _types.SEND_MESSAGE:
             {
                 var newState = _lodash2.default.map(state, _lodash2.default.clone);
-                newState.push({
-                    user: false,
-                    content: action.payload
+                action.payload.forEach(function (message) {
+                    newState.push({
+                        user: false,
+                        content: message
+                    });
                 });
+
                 console.log(action.payload, "payload");
                 console.log(newState, "new state");
                 return newState;
