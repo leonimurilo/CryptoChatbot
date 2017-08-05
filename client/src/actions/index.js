@@ -1,8 +1,12 @@
 import Axios from "axios";
 import {SEND_MESSAGE, SHOW_USER_MESSAGE, UPDATE_CONVERSATION_CONTEXT} from "./types";
 
-export function sendMessage(message) {
-    const requestPromise = Axios.post("/api/message", message);
+export function sendMessage(message, context) {
+    const requestPromise = Axios.post("/api/message",
+        {
+            message,
+            context
+        });
 
     // Redux Thunk allows returning functions
     return (dispatch) => {
