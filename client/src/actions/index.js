@@ -1,10 +1,10 @@
 import Axios from "axios";
-import {SEND_MESSAGE, SHOW_USER_MESSAGE} from "./types";
+import {SEND_MESSAGE, SHOW_USER_MESSAGE, UPDATE_CONVERSATION_CONTEXT} from "./types";
 
 export function sendMessage(message) {
     const requestPromise = Axios.post("/api/message", message);
 
-    // Redxu Thunk allows returning functions
+    // Redux Thunk allows returning functions
     return (dispatch) => {
         dispatch(
             {
@@ -18,6 +18,13 @@ export function sendMessage(message) {
             dispatch(
                 {
                     type: SEND_MESSAGE,
+                    payload: data
+                }
+            );
+
+            dispatch(
+                {
+                    type: UPDATE_CONVERSATION_CONTEXT,
                     payload: data
                 }
             );

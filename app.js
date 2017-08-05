@@ -29,6 +29,9 @@
 
     require('./server/routes/index.js')(app);
 
+    // if intent needs API, the watson response is changed
+    // else it will be returned
+
     watsonConversation.sendMessage({
         text:"hallo",
         context: {}
