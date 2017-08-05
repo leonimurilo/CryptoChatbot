@@ -27,19 +27,19 @@
     app.use(bodyParser.json({limit: "50mb"}));
     app.use(cors());
 
-    require('./server/routes/index.js')(app);
+    require('./server/routes/index.js')(app, watsonConversation);
 
     // if intent needs API, the watson response is changed
     // else it will be returned
 
-    watsonConversation.sendMessage({
-        text:"hallo",
-        context: {}
-    }).then(function (data) {
-        console.log(data.response.entities);
-    }).catch(function (err) {
-        console.log("ERROR: ",err);
-    });
+    // watsonConversation.sendMessage({
+    //     text:"hallo",
+    //     context: {}
+    // }).then(function (data) {
+    //     console.log(data.response.entities);
+    // }).catch(function (err) {
+    //     console.log("ERROR: ",err);
+    // });
 
     app.listen(port, function () {
         console.log('Server running on port: %d', port);
