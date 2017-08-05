@@ -9,8 +9,8 @@ export default function (state = [], action) {
                 user: false,
                 content: action.payload
             });
-            // console.log(action.payload, "payload");
-            // console.log(newState, "new state");
+            console.log(action.payload, "payload");
+            console.log(newState, "new state");
             return newState;
         }
 
