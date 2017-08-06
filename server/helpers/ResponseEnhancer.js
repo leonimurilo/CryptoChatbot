@@ -40,10 +40,7 @@
 
     function priceEnhancement(rawResponse, res) {
         let clone = new Array(rawResponse.output.text);
-
         let coinId = idMapping[rawResponse.entities[0].value].id;
-        console.log(rawResponse);
-        console.log(coinId);
 
         axios.get("https://api.coinmarketcap.com/v1/ticker/"+coinId).then(function (response) {
 
@@ -63,61 +60,76 @@
             });
         });
 
-        return {
-            output: clone,
-            context: rawResponse.context
-        }
     }
 
-    function dropEnhancement(rawResponse, res) {
+    function changeEnhancement(rawResponse, res) {
         let clone = new Array(rawResponse.output.text);
+        let coinId = idMapping[rawResponse.entities[0].value].id;
 
-        clone[clone.length-1] += " askDrop";
+        axios.get("https://api.coinmarketcap.com/v1/ticker/"+coinId).then(function (response) {
+            let hour = Number(response.data[0].percent_change_1h);
+            let day =  Number(response.data[0].percent_change_24h);
+            let week =  Number(response.data[0].percent_change_7d);
 
-        return {
-            output: clone,
-            context: rawResponse.context
-        }
-    }
+            if(hour >= 0 || day >= 0 || week >= 0){
+                clone[clone.length-1] += " didn't fall in the last 7 days. Here is what I've got: ";
+            }else{
+                clone[clone.length-1] += " did fall in the last 7 days. Here is what I've got: ";
+            }
 
-    function percentageDropEnhancement(rawResponse, res) {
-        let clone = new Array(rawResponse.output.text);
+            clone.push("1h change: "+ hour + "%");
+            clone.push("24h change: "+ day + "%");
+            clone.push("7 day change: "+ week + "%");
 
-        clone[clone.length-1] += " askPercentageDrop";
+            if(week > 20)
+                clone.push("As you can see, the 7 day change was very significant.");
 
-        return {
-            output: clone,
-            context: rawResponse.context
-        }
-    }
+            const url = "https://coinmarketcap.com/currencies/"+coinId;
+            clone.push("You can see more information "+url);
 
-    function percentageRiseEnhancement(rawResponse, res) {
-        let clone = new Array(rawResponse.output.text);
+            return res.status(200).send({
+                output: clone,
+                context: rawResponse.context
+            });
 
-        clone[clone.length-1] += " askPercentageRise";
-
-        return {
-            output: clone,
-            context: rawResponse.context
-        }
+        }).catch(function (err) {
+            console.log(err);
+            return res.status(200).send({
+                output: rawResponse.output.text,
+                context: rawResponse.context
+            });
+        });
     }
 
     function activeEnhancement(rawResponse, res) {
         let clone = new Array(rawResponse.output.text);
 
-        clone[clone.length-1] += " askActive";
+        axios.get("https://api.coinmarketcap.com/v1/global/").then(function (response) {
 
-        return {
-            output: clone,
-            context: rawResponse.context
-        }
+            clone.push("There are currently " + response.data.active_currencies + " active cryptocurrencies" +
+                " and " + response.data.active_assets + " assets.");
+
+            return res.status(200).send({
+                output: clone,
+                context: rawResponse.context
+            });
+
+        }).catch(function (err) {
+            console.log(err);
+            return res.status(200).send({
+                output: rawResponse.output.text,
+                context: rawResponse.context
+            });
+        });
     }
 
     module.exports = function(){
         return {
             handleResponse(rawResponse, res){
 
+
                 if(rawResponse.output.enhanceable){
+                    console.log("RETURNED ACTION:", rawResponse.output.action);
                     if(rawResponse.output.action === "Ask_top"){
                         return topEnhancement(rawResponse, res);
                     }
@@ -127,15 +139,15 @@
                     }
 
                     if(rawResponse.output.action === "Ask_drop"){
-                        return dropEnhancement(rawResponse, res);
+                        return changeEnhancement(rawResponse, res);
                     }
 
                     if(rawResponse.output.action === "Ask_percentage_drop"){
-                        return percentageDropEnhancement(rawResponse, res);
+                        return changeEnhancement(rawResponse, res);
                     }
 
                     if(rawResponse.output.action === "Ask_percentage_rise"){
-                        return percentageRiseEnhancement(rawResponse, res);
+                        return changeEnhancement(rawResponse, res);
                     }
 
                     if(rawResponse.output.action === "Ask_active"){
