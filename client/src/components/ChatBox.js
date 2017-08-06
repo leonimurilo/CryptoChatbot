@@ -35,7 +35,9 @@ class ChatBox extends Component{
         return (
             <div id="chat-box">
                 <MessagesBox/>
-                <form onSubmit={this.onFormSubmit.bind(this)}>
+                <form onSubmit={this.onFormSubmit.bind(this)}
+                disabled={(this.state.message==="")}
+                >
                     <div className="field has-addons">
                         <div className="control is-expanded">
                             <input placeholder="Type your message here"
@@ -50,7 +52,7 @@ class ChatBox extends Component{
                         <div className="control">
                             <button type="submit"
                                     className="button is-info is-outlined"
-                                    disabled={!this.props.allowInput}>Send</button>
+                                    disabled={!this.props.allowInput || (this.state.message==="")}>Send</button>
                         </div>
 
                     </div>

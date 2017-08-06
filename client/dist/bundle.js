@@ -169,7 +169,9 @@ var ChatBox = function (_Component) {
                 _react2.default.createElement(_MessagesBox2.default, null),
                 _react2.default.createElement(
                     "form",
-                    { onSubmit: this.onFormSubmit.bind(this) },
+                    { onSubmit: this.onFormSubmit.bind(this),
+                        disabled: this.state.message === ""
+                    },
                     _react2.default.createElement(
                         "div",
                         { className: "field has-addons" },
@@ -194,7 +196,7 @@ var ChatBox = function (_Component) {
                                 "button",
                                 { type: "submit",
                                     className: "button is-info is-outlined",
-                                    disabled: !this.props.allowInput },
+                                    disabled: !this.props.allowInput || this.state.message === "" },
                                 "Send"
                             )
                         )
