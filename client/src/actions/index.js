@@ -1,5 +1,10 @@
 import Axios from "axios";
-import {SEND_MESSAGE, SHOW_USER_MESSAGE, UPDATE_CONVERSATION_CONTEXT} from "./types";
+import {
+    SEND_MESSAGE,
+    SHOW_USER_MESSAGE,
+    UPDATE_CONVERSATION_CONTEXT,
+    SWITCH_USER_INPUT
+} from "./types";
 
 export function sendMessage(message, context) {
     const requestPromise = Axios.post("/api/message",
@@ -14,6 +19,13 @@ export function sendMessage(message, context) {
             {
                 type: SHOW_USER_MESSAGE,
                 payload: message
+            }
+        );
+
+        dispatch(
+            {
+                type: SWITCH_USER_INPUT,
+                payload: {allow: false}
             }
         );
 
@@ -32,6 +44,14 @@ export function sendMessage(message, context) {
                     payload: data.context
                 }
             );
+
+            dispatch(
+                {
+                    type: SWITCH_USER_INPUT,
+                    payload: {allow: true}
+                }
+            );
+
         }).catch(err => {
             console.log(err);
         });

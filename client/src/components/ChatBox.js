@@ -19,8 +19,16 @@ class ChatBox extends Component{
 
     onFormSubmit(event){
         event.preventDefault();
-        this.props.sendMessage(this.state.message, this.props.context);
-        this.setState({message: ""});
+        if(this.props.allowInput){
+            this.props.sendMessage(this.state.message, this.props.context);
+            this.setState({message: ""});
+        }
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (this.props.allowInput) {
+            this.textInput.focus();
+        }
     }
 
     render(){
@@ -31,8 +39,11 @@ class ChatBox extends Component{
                     <input placeholder="Type your message here"
                            value={this.state.message}
                            onChange={this.onInputChange.bind(this)}
+                           disabled={!this.props.allowInput}
+                           autoFocus
+                           ref={input => this.textInput = input}
                     />
-                    <button type="submit" >Send</button>
+                    <button type="submit" disabled={!this.props.allowInput}>Send</button>
                 </form>
             </div>
         );
@@ -43,9 +54,10 @@ function mapDispatchToProps(dispatch){
     return bindActionCreators({sendMessage}, dispatch);
 }
 
-function mapStateToProps({conversationContext}){
+function mapStateToProps({conversationContext, allowInput}){
     return {
-        context: conversationContext
+        context: conversationContext,
+        allowInput
     }
 }
 
