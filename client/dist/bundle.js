@@ -77,12 +77,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = function (props) {
     return _react2.default.createElement(
         "div",
-        null,
-        _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: "/" },
-            "Home page"
-        ),
+        { className: "" },
         _react2.default.createElement(_ChatBox2.default, null)
     );
 };
@@ -91,15 +86,13 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = require("react-router-dom");
-
 var _ChatBox = require("../components/ChatBox");
 
 var _ChatBox2 = _interopRequireDefault(_ChatBox);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-},{"../components/ChatBox":4,"react":261,"react-router-dom":111}],4:[function(require,module,exports){
+},{"../components/ChatBox":4,"react":261}],4:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -230,11 +223,6 @@ exports.default = function (props) {
             "h3",
             null,
             "Landing page"
-        ),
-        _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: "/chat" },
-            "Go to chat"
         )
     );
 };
@@ -243,11 +231,9 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = require("react-router-dom");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-},{"react":261,"react-router-dom":111}],6:[function(require,module,exports){
+},{"react":261}],6:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -369,7 +355,60 @@ _reactDom2.default.render(_react2.default.createElement(
         null,
         _react2.default.createElement(
             "div",
-            null,
+            { className: "hero is-large" },
+            _react2.default.createElement(
+                "div",
+                { className: "hero-head" },
+                _react2.default.createElement(
+                    "header",
+                    { className: "nav" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "container" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "nav-left" },
+                            _react2.default.createElement(
+                                "span",
+                                { className: "nav-item" },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { className: "button is-inverted is-info is-2", to: "/" },
+                                    "Home"
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "span",
+                                { className: "nav-item" },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { className: "button is-inverted is-info is-2", to: "/chat" },
+                                    "Chat"
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "nav-right nav-menu" },
+                            _react2.default.createElement(
+                                "span",
+                                { className: "nav-item" },
+                                _react2.default.createElement(
+                                    "a",
+                                    { className: "button is-inverted is-info",
+                                        target: "_blank",
+                                        href: "https://github.com/leonimurilo/CryptoChatbot" },
+                                    _react2.default.createElement(
+                                        "span",
+                                        null,
+                                        "GitHub"
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            ),
             _react2.default.createElement(
                 _reactRouterDom.Switch,
                 null,
@@ -378,7 +417,7 @@ _reactDom2.default.render(_react2.default.createElement(
             )
         )
     )
-), document.querySelector(".container"));
+), document.querySelector("#main"));
 
 },{"./components/Chat":3,"./components/Landing":5,"./reducers":11,"react":261,"react-dom":83,"react-redux":86,"react-router-dom":111,"redux":269,"redux-promise":262,"redux-thunk":263}],8:[function(require,module,exports){
 "use strict";

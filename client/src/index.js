@@ -5,6 +5,7 @@ import {applyMiddleware, createStore} from "redux";
 import ReduxPromise from "redux-promise"
 import ReduxThunk from 'redux-thunk';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import reducers from "./reducers";
 import Landing from "./components/Landing";
@@ -15,7 +16,30 @@ const createStoreWithMiddleware = applyMiddleware(ReduxPromise, ReduxThunk)(crea
 ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
         <BrowserRouter>
-            <div>
+            <div className="hero is-large">
+                <div className="hero-head">
+                    <header className="nav">
+                        <div className="container">
+                            <div className="nav-left">
+                                <span className="nav-item">
+                                    <Link className="button is-inverted is-info is-2" to="/">Home</Link>
+                                </span>
+                                <span className="nav-item">
+                                    <Link className="button is-inverted is-info is-2" to="/chat">Chat</Link>
+                                </span>
+                            </div>
+                            <div className="nav-right nav-menu">
+                                <span className="nav-item">
+                                    <a className="button is-inverted is-info"
+                                       target="_blank"
+                                       href="https://github.com/leonimurilo/CryptoChatbot">
+                                      <span>GitHub</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </header>
+                </div>
                 <Switch>
                     <Route path="/chat" component={Chat}/>
                     <Route path="/" component={Landing}/>
@@ -23,5 +47,5 @@ ReactDOM.render(
             </div>
         </BrowserRouter>
     </Provider>
-    , document.querySelector(".container")
+    , document.querySelector("#main")
 );
