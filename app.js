@@ -13,8 +13,6 @@
         app  = express(),
         path = require("path"),
         bodyParser = require("body-parser"),
-        queryString = require("querystring"),
-        request = require("request"),
         cfenv = require("cfenv"),
         http = require("http"),
         cors = require("cors"),
