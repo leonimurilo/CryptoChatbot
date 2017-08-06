@@ -2,6 +2,7 @@
 
     const axios = require("axios");
     const _ = require("lodash");
+    const idMapping = require("../../idMapping.json");
 
     function topEnhancement(rawResponse, res) {
         let clone = new Array(rawResponse.output.text);
@@ -40,7 +41,27 @@
     function priceEnhancement(rawResponse, res) {
         let clone = new Array(rawResponse.output.text);
 
-        clone[clone.length-1] += " askPrice";
+        let coinId = idMapping[rawResponse.entities[0].value].id;
+        console.log(rawResponse);
+        console.log(coinId);
+
+        axios.get("https://api.coinmarketcap.com/v1/ticker/"+coinId).then(function (response) {
+
+            clone.push("$"+response.data[0].price_usd);
+            clone.push("This is equivalent to "+response.data[0].price_btc + " Bitcoins.");
+
+            return res.status(200).send({
+                output: clone,
+                context: rawResponse.context
+            });
+
+        }).catch(function (err) {
+            console.log(err);
+            return res.status(200).send({
+                output: rawResponse.output.text,
+                context: rawResponse.context
+            });
+        });
 
         return {
             output: clone,
