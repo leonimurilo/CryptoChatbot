@@ -33,17 +33,27 @@ class ChatBox extends Component{
 
     render(){
         return (
-            <div>
+            <div id="chat-box">
                 <MessagesBox/>
                 <form onSubmit={this.onFormSubmit.bind(this)}>
-                    <input placeholder="Type your message here"
-                           value={this.state.message}
-                           onChange={this.onInputChange.bind(this)}
-                           disabled={!this.props.allowInput}
-                           autoFocus
-                           ref={input => this.textInput = input}
-                    />
-                    <button type="submit" disabled={!this.props.allowInput}>Send</button>
+                    <div className="field has-addons">
+                        <div className="control is-expanded">
+                            <input placeholder="Type your message here"
+                                   value={this.state.message}
+                                   className="input is-info"
+                                   onChange={this.onInputChange.bind(this)}
+                                   disabled={!this.props.allowInput}
+                                   autoFocus
+                                   ref={input => this.textInput = input}
+                            />
+                        </div>
+                        <div className="control">
+                            <button type="submit"
+                                    className="button is-info is-outlined"
+                                    disabled={!this.props.allowInput}>Send</button>
+                        </div>
+
+                    </div>
                 </form>
             </div>
         );

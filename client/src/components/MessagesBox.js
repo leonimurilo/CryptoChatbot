@@ -19,7 +19,7 @@ class MessagesBox extends Component{
 
     render(){
         return (
-            <div>
+            <div id="message-box">
                 <ul>
                     {this.renderMessages(this.props.messages)}
                 </ul>

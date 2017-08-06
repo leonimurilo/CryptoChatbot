@@ -77,7 +77,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = function (props) {
     return _react2.default.createElement(
         "div",
-        { className: "" },
+        { id: "chat-container", className: "container desktop" },
         _react2.default.createElement(_ChatBox2.default, null)
     );
 };
@@ -165,24 +165,39 @@ var ChatBox = function (_Component) {
 
             return _react2.default.createElement(
                 "div",
-                null,
+                { id: "chat-box" },
                 _react2.default.createElement(_MessagesBox2.default, null),
                 _react2.default.createElement(
                     "form",
                     { onSubmit: this.onFormSubmit.bind(this) },
-                    _react2.default.createElement("input", { placeholder: "Type your message here",
-                        value: this.state.message,
-                        onChange: this.onInputChange.bind(this),
-                        disabled: !this.props.allowInput,
-                        autoFocus: true,
-                        ref: function ref(input) {
-                            return _this2.textInput = input;
-                        }
-                    }),
                     _react2.default.createElement(
-                        "button",
-                        { type: "submit", disabled: !this.props.allowInput },
-                        "Send"
+                        "div",
+                        { className: "field has-addons" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "control is-expanded" },
+                            _react2.default.createElement("input", { placeholder: "Type your message here",
+                                value: this.state.message,
+                                className: "input is-info",
+                                onChange: this.onInputChange.bind(this),
+                                disabled: !this.props.allowInput,
+                                autoFocus: true,
+                                ref: function ref(input) {
+                                    return _this2.textInput = input;
+                                }
+                            })
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "control" },
+                            _react2.default.createElement(
+                                "button",
+                                { type: "submit",
+                                    className: "button is-info is-outlined",
+                                    disabled: !this.props.allowInput },
+                                "Send"
+                            )
+                        )
                     )
                 )
             );
@@ -218,7 +233,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = function (props) {
     return _react2.default.createElement(
         "div",
-        null,
+        { className: "container has-text-centered" },
         _react2.default.createElement(
             "h3",
             null,
@@ -285,7 +300,7 @@ var MessagesBox = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 "div",
-                null,
+                { id: "message-box" },
                 _react2.default.createElement(
                     "ul",
                     null,
@@ -355,13 +370,13 @@ _reactDom2.default.render(_react2.default.createElement(
         null,
         _react2.default.createElement(
             "div",
-            { className: "hero is-large" },
+            null,
             _react2.default.createElement(
-                "div",
-                { className: "hero-head" },
+                "header",
+                null,
                 _react2.default.createElement(
-                    "header",
-                    { className: "nav" },
+                    "nav",
+                    { className: "nav has-shadow" },
                     _react2.default.createElement(
                         "div",
                         { className: "container" },
@@ -410,10 +425,14 @@ _reactDom2.default.render(_react2.default.createElement(
                 )
             ),
             _react2.default.createElement(
-                _reactRouterDom.Switch,
-                null,
-                _react2.default.createElement(_reactRouterDom.Route, { path: "/chat", component: _Chat2.default }),
-                _react2.default.createElement(_reactRouterDom.Route, { path: "/", component: _Landing2.default })
+                "section",
+                { className: "section" },
+                _react2.default.createElement(
+                    _reactRouterDom.Switch,
+                    null,
+                    _react2.default.createElement(_reactRouterDom.Route, { path: "/chat", component: _Chat2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: "/", component: _Landing2.default })
+                )
             )
         )
     )

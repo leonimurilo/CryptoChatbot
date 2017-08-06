@@ -16,9 +16,9 @@ const createStoreWithMiddleware = applyMiddleware(ReduxPromise, ReduxThunk)(crea
 ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
         <BrowserRouter>
-            <div className="hero is-large">
-                <div className="hero-head">
-                    <header className="nav">
+            <div>
+                <header>
+                    <nav className="nav has-shadow">
                         <div className="container">
                             <div className="nav-left">
                                 <span className="nav-item">
@@ -38,12 +38,14 @@ ReactDOM.render(
                                 </span>
                             </div>
                         </div>
-                    </header>
-                </div>
-                <Switch>
-                    <Route path="/chat" component={Chat}/>
-                    <Route path="/" component={Landing}/>
-                </Switch>
+                    </nav>
+                </header>
+                <section className="section">
+                    <Switch>
+                        <Route path="/chat" component={Chat}/>
+                        <Route path="/" component={Landing}/>
+                    </Switch>
+                </section>
             </div>
         </BrowserRouter>
     </Provider>

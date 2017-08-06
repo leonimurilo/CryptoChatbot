@@ -4,7 +4,7 @@ import ChatBox from "../components/ChatBox";
 
 export default function(props) {
     return (
-        <div className="">
+        <div id="chat-container" className="container desktop">
             <ChatBox/>
         </div>
     );
