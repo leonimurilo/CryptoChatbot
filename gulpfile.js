@@ -1,30 +1,38 @@
-let gulp = require('gulp');
-let browserify = require('browserify');
-let babelify = require('babelify');
-let source = require('vinyl-source-stream');
+const gulp = require("gulp");
+const buffer = require("vinyl-buffer");
+const browserify = require("browserify");
+const watchify = require("watchify");
+const babel = require("babelify");
+const source = require("vinyl-source-stream");
 
-const paths = {
-    components: {
-        dest: "",
-        src: "",
-        testDest: "",
-        testSrc: ""
+
+function compile(watch) {
+    let bundler = watchify(browserify({ entries:"client/src/index.js"}).transform(babel));
+
+    function rebundle() {
+        bundler.bundle()
+            .on("error", function(err) { console.error(err); this.emit("end"); })
+            .pipe(source("bundle.js"))
+            .pipe(buffer())
+            .pipe(gulp.dest("./client/dist"));
+        console.log("Build finished!");
     }
-};
 
+    if (watch) {
+        bundler.on("update", function() {
+            console.log("Building...");
+            rebundle();
+        });
+    }
 
-gulp.task('bundle', function() {
-    return browserify({
-        entries: 'client/src/index.js',
-    }).transform(babelify.configure({
-            presets: ["es2015", "react"]
-        }))
-        .bundle()
-        .on("error", function (err) { console.log("Error : " + err.message); })
-        .pipe(source('bundle.js'))
-        .pipe(gulp.dest('client/dist'));
-});
+    rebundle();
+}
 
-gulp.task('createComponent', function() {
-    console.log("unavailable")
-});
+function watch() {
+    return compile(true);
+}
+
+gulp.task("build", function() { return compile(); });
+gulp.task("watch", function() { return watch(); });
+
+gulp.task("default", ["build"]);
