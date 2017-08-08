@@ -64,34 +64,50 @@
 
     function changeEnhancement(rawResponse, res) {
         let clone = new Array(rawResponse.output.text);
-        let coinId = idMapping[rawResponse.entities[0].value].id;
+        let promises = [];
+        let coinIds = [];
 
-        axios.get("https://api.coinmarketcap.com/v1/ticker/"+coinId).then(function (response) {
-            let hour = Number(response.data[0].percent_change_1h);
-            let day =  Number(response.data[0].percent_change_24h);
-            let week =  Number(response.data[0].percent_change_7d);
+        rawResponse.entities.forEach(function (entity) {
+            let coinId = idMapping[entity.value].id;
+            coinIds.push(coinId);
+            promises.push(axios.get("https://api.coinmarketcap.com/v1/ticker/" + coinId));
+        });
+        
+        Promise.all(promises).then(function (responses) {
+            for (let i = 0; i<responses.length; i++){
+                let hour = Number(responses[i].data[0].percent_change_1h);
+                let day =  Number(responses[i].data[0].percent_change_24h);
+                let week =  Number(responses[i].data[0].percent_change_7d);
 
-            if(hour >= 0 || day >= 0 || week >= 0){
-                clone[clone.length-1] += " didn't fall in the last 7 days. Here is what I've got: ";
-            }else{
-                clone[clone.length-1] += " did fall in the last 7 days. Here is what I've got: ";
+                if(i===0){
+                    if(hour >= 0 && day >= 0 && week >= 0){
+                        clone[clone.length-1] += "the " + rawResponse.entities[i].value + " didn't fall in the last 7 days. Here is what I've got: ";
+                    }else{
+                        clone[clone.length-1] += "the " + rawResponse.entities[i].value + " did fall in the last 7 days. Here is what I've got: ";
+                    }
+                }else{
+                    if(hour >= 0 && day >= 0 && week >= 0){
+                        clone.push(rawResponse.entities[i].value + " didn't fall in the last 7 days. Here is what I've got: ");
+                    }else{
+                        clone.push(rawResponse.entities[i].value + " did fall in the last 7 days. Here is what I've got: ");
+                    }
+                }
+
+                clone.push("1h change: "+ hour + "%");
+                clone.push("24h change: "+ day + "%");
+                clone.push("7 day change: "+ week + "%");
+
+                if(week > 20)
+                    clone.push("As you can see, the 7 day change for " + rawResponse.entities[i].value + " was very significant.");
+
+                const url = "https://coinmarketcap.com/currencies/"+coinIds[i];
+                clone.push("You can see more information in "+url);
+
             }
-
-            clone.push("1h change: "+ hour + "%");
-            clone.push("24h change: "+ day + "%");
-            clone.push("7 day change: "+ week + "%");
-
-            if(week > 20)
-                clone.push("As you can see, the 7 day change was very significant.");
-
-            const url = "https://coinmarketcap.com/currencies/"+coinId;
-            clone.push("You can see more information "+url);
-
             return res.status(200).send({
                 output: clone,
                 context: rawResponse.context
             });
-
         }).catch(function (err) {
             console.log(err);
             return res.status(200).send({
@@ -99,6 +115,7 @@
                 context: rawResponse.context
             });
         });
+
     }
 
     function activeEnhancement(rawResponse, res) {
