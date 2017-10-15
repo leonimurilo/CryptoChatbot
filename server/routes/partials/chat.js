@@ -1,10 +1,35 @@
-(function (app) {
+(function () {
     "use strict";
 
-    module.exports = function (app) {
+    const util = require("util");
+    const ResponseEnhancer = require("../../helpers/ResponseEnhancer")();
+
+    module.exports = function (app, watsonConversation) {
 
         app.get("/api/test", function (req, res) {
             res.status(200).send("Test working");
+        });
+
+        app.post("/api/message", function (req, res) {
+            let msg = req.body.message;
+            let context = req.body.context || {};
+            if(!msg)
+                return res.status(422).send({status:422, error: "message argument is missing."});
+
+
+            // must return response.output.text and response.context
+            watsonConversation.sendMessage({
+                text:msg,
+                context
+            }).then(function (data) {
+                console.log(util.inspect(data.response, {showHidden: false, depth: null}));
+                console.log("\n===================================================\n");
+                ResponseEnhancer.handleResponse(data.response, res);
+                // res.status(200).send();
+            }).catch(function (err) {
+                console.log("ERROR: ",err);
+            });
+
         });
 
     };

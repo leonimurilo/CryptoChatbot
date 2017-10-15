@@ -1,18 +1,11 @@
 import React, {Component} from "react";
-import {connect} from "react-redux";
-import {Link} from "react-router-dom";
-// import {sendMessage} from "../actions";
+import ChatBox from "../components/ChatBox";
 
 
-class Chat extends Component{
-    render(){
-        return (
-            <div>
-                <Link to="/">Home page</Link>
-                <h2>Chat</h2>
-            </div>
-        );
-    }
+export default function(props) {
+    return (
+        <div id="chat-container" className="container desktop">
+            <ChatBox/>
+        </div>
+    );
 }
-
-export default connect(null, null)(Chat);

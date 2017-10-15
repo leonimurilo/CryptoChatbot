@@ -1,11 +1,9 @@
 import React from "react";
-import {Link} from "react-router-dom";
 
 export default function (props) {
     return (
-        <div>
-            <h3>Landing page</h3>
-            <Link to="/chat">Go to chat</Link>
+        <div className="container has-text-centered">
+            <h3>Landing page here123</h3>
         </div>
     );
 }

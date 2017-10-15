@@ -3,7 +3,7 @@
  */
 (function(){
 
-    var WatsonConversation = require('watson-developer-cloud/conversation/v1');
+    const WatsonConversation = require('watson-developer-cloud/conversation/v1');
 
     module.exports = function (credentials) {
         if(!credentials){
@@ -14,12 +14,14 @@
             throw new Error("The credentials doesn't have all the required properties.");
         }
 
-        var module = {};
-        var watsonConversation = new WatsonConversation({
+        let module = {};
+        const watsonConversation = new WatsonConversation({
             username: credentials.username,
             password: credentials.password,
             version_date: credentials.version
         });
+
+        const defaultWorkspaceId = credentials.workspace_id;
 
         /**
          * Send a text to a watson conversation workspace and returns its response after receiving it
@@ -32,7 +34,7 @@
                 watsonConversation.message({
                     input: { text: opt.text },
                     context: opt.context,
-                    workspace_id: opt.workspaceId
+                    workspace_id: opt.workspaceId || defaultWorkspaceId
                 }, function(err, data) {
                     if (err) {
                         console.error(err);
